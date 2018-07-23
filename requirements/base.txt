@@ -1,0 +1,9 @@
+Django
+fabric
+flake8
+gunicorn
+Pillow
+pymysql
+raven
+social-auth-app-django
+sendgrid-django

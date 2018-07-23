@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block contents %}
+{% include "_header_menu.html" %}
+<div class="h_box">
+    <h2 class="page_titile">スピーカーに応募する</h2>
+</div>
+<section class="main_box">
+    <div class="page_box clearfix">
+        <div class="contents_box">
+			<form action="" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="user" value="{{ request.user.pk }}" />
+				<div class="form_head">
+          {#<div class="ico_user"><img src="{% static 'img/ico_dummy.png' %}"></div>#}
+          {% if provider == 'github' %}
+          <p class="name_user"><span>GitHub: <a href="https://github.com/{{ username }}" target="_blank">{{ username }}</a></span></p>
+          {% elif provider == 'twitter' %}
+          <p class="name_user"><span>Twitter: <a href="https://twitter.com/{{ username }}" target="_blank">@{{ username }}</a></span></p>
+          {% endif %}
+          <p><a href="{% url 'logout' %}">ログアウト</a></p>
+				</div>
+				<div class="form_box">
+					<div class="form_guideline">
+						<h3>応募ガイドライン</h3>
+						<ul>
+              <li>発表内容はErlang,Elixirのいずれかに関係するものであること。</li>
+              <li>発表時間は質疑応答を含めて30分であること。</li>
+              <li>発表内容は日本語であること。もしくは英語であること。</li>
+              <li>応募締め切りは3月31日 23:59分 JSTです。</li>
+              <li>発表の選考方法は、実行委員がバランスを考えて選考いたします。</li>
+              <li>募集枠は8枠です。</li>
+              <li>発表者は、イベントへはチケット購入せずご参加いただけます。</li>
+              <li>選考結果は、4月中旬にご連絡予定です。</li>
+						</ul>
+					</div>
+					<p class="form_h">連絡用メールアドレス<span>※必須</span></p>
+          <p>{{ form.email }}</p>
+					<p class="form_h">タイトル<span>※必須</span></p>
+          <p>{{ form.title }}</p>
+					<p class="form_h">概要<span>※必須</span></p>
+          <p>{{ form.description }}</p>
+					<p class="form_h">レビュアーへのメッセージ（非公開）</p>
+          <p>{{ form.comment }}</p>
+					<button class="btn_submit">送信する<i class="icon-play3"></i></button>
+				</div>
+			</form>
+		</div>
+    </div>
+</section>
+{% endblock contents %}

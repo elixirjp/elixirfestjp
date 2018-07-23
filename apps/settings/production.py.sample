@@ -1,0 +1,57 @@
+from .base import *  # noqa
+
+DEBUG = False
+
+ALLOWED_HOSTS = ['*']
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'elixir-fest2018',
+        'USER': 'INSERT_YOUR_DB_USER',
+        'PASSWORD': 'INSERT_YOUR_DB_PASSWORD',
+        'HOST': 'INSERT_YOUR_DB_HOST',
+        'PORT': 3306,
+    }
+}
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'standard': {
+            'format': '%(asctime)s - [%(levelname)s] %(message)s'
+        },
+        'verbose': {
+            'format': '%(asctime)s - %(module)s(line %(lineno)d) [%(levelname)s] %(message)s'
+        },
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'standard',
+        },
+        'console-verbose': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+        },
+    },
+    'loggers': {
+        'core': {
+            'handlers': ['console-verbose'],
+            'level': 'DEBUG',
+        },
+    },
+}
+
+WSGI_APPLICATION = 'wsgi.production.application'
+EMAIL_BACKEND = 'sgbackend.SendGridBackend'
+SENDGRID_API_KEY = 'INSERT_YOUR_SENDGRID_API_KEY'
+
+SOCIAL_AUTH_GITHUB_KEY = 'INSERT_YOUR_GITHUB_KEY'
+SOCIAL_AUTH_GITHUB_SECRET = 'INSERT_YOUR_GITHUB_SECRET'
+SOCIAL_AUTH_TWITTER_KEY = 'INSERT_YOUR_TWITTER_KEY'
+SOCIAL_AUTH_TWITTER_SECRET = 'INSERT_YOUR_TWITTER_SECRET'
+
+ADMIN_EMAIL_FROM = 'no-reply@elixirconf.jp'
+ADMIN_EMAILS_TO = []

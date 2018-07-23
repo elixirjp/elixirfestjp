@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block contents %}
+{% include "_header_menu.html" %}
+<div class="h_box">
+    <h2 class="page_titile">スピーカーに応募する</h２>
+</div>
+<section class="main_box">
+  <div class="page_box clearfix">
+    <div class="contents_box">
+      <p class="login_text">スピーカーに応募するにはログインが必要です</p>
+      <div class="btn_login_box clearfix">
+        <p class="btn_login_git"><a href="{% url "social:begin" "github" %}"><img src="{% static 'img/ico_github.png' %}">GitHub<i class="icon-play3"></i></a></p>
+        <p class="btn_login_tw"><a href="{% url "social:begin" "twitter" %}"><i class="icon-twitter"></i>Twitter<i class="icon-play3"></i></a></p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock contents %}

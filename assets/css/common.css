@@ -1,0 +1,937 @@
+@charset "utf-8";
+body {
+  color: #333333;
+  font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  line-height: 1.8em;
+  font-size: 1.4rem;
+  background: url(../img/bg_mv.png) no-repeat;
+  background-size: contain;
+}
+a, button {
+  color: #de8d00;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+a:hover {
+  opacity: 0.6;
+}
+div {
+  box-sizing: border-box;
+}
+.font_ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}
+.text_s {
+  font-size: 90%;
+}
+.text_l {
+  font-size: 120%;
+}
+.text_red {
+  color: #d60d0d;
+}
+/*-- header --*/
+header {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  min-width: 1024px;
+  height: 60px;
+  z-index: 99;
+  padding: 15px 15px 0;
+  box-sizing: border-box;
+}
+header a {
+  color: #2a7b92;
+}
+.header_h1 {
+  font-size: 2.2rem;
+  font-family: 'Ubuntu', sans-serif;
+  color: #2a7b92;
+  float: left;
+}
+.header_h1 span {
+  color: #2cafa1;
+}
+.header_menu {
+  float: right;
+}
+.header_menu ul {
+  display: inline-block;
+  margin: 2px 0 0 0;
+}
+.header_menu li {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  padding: 0 20px 0 0;
+  border-right: 1px solid #ededed;
+}
+.header_menu li:last-child {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  padding: 0;
+  border-right: none;
+}
+.header_twitter_text {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: bold;
+  float: right;
+}
+.header_twitter_text span {
+  background: #2a7b92;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: normal;
+  padding: 4px 0 0 0;
+  margin: 0 5px 0 0;
+  box-sizing: border-box;
+}
+.header_twitter_text a {
+  color: #333333;
+}
+/*-- h_box --*/
+.h_box {
+  width: 1024px;
+  height: 170px;
+  margin: 60px auto 0;
+  text-align: center;
+}
+.page_titile {
+  font-size: 2.6rem;
+  padding: 55px 0 0;
+  font-weight: bold;
+}
+/*-- mv_box --*/
+.mv_box {
+  width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 0 0 0;
+}
+.logo_erlang {
+  margin: 0 30px 35px 30px;
+  width: 56px;
+  height: auto;
+}
+.logo_elixir {
+  margin: 0 0 35px 0;
+  width: 113px;
+  height: auto;
+}
+.mv_title01 {
+  font-size: 7.2rem;
+  font-family: 'Ubuntu', sans-serif;
+  color: #2a7b92;
+  animation: title01 0.5s ease-out alternate;
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+ @keyframes title01 {
+ 0% {
+ transform: translatex(-100px);
+ opacity: 0;
+}
+ 100% {
+ transform: translatex(0px);
+ opacity: 1;
+}
+}
+.mv_title02 {
+  font-size: 7.2rem;
+  font-family: 'Ubuntu', sans-serif;
+  color: #2cafa1;
+  animation: title02 0.5s ease-out alternate;
+  display: inline-block;
+}
+ @keyframes title02 {
+ 0% {
+ transform: translatex(100px);
+ opacity: 0;
+}
+ 100% {
+ transform: translatex(0px);
+ opacity: 1;
+}
+}
+.day_text {
+  margin: 90px 0 0 0;
+}
+.day_blue_text {
+  color: #2a7b92;
+  margin: 0 10px 0 0;
+  position: relative;
+  top: -5px;
+}
+.day_number_text {
+  font-size: 3.2rem;
+}
+.place-text {
+  font-size: 3.6rem;
+  margin: 10px 0 0 0;
+}
+.map_link {
+  background: #2cafa1;
+  color: #ffffff;
+  border-radius: 3px;
+  padding: 5px 20px;
+  display: inline-block;
+  font-size: 1.0rem;
+  vertical-align: bottom;
+  line-height: 1.0em;
+}
+.hash_text {
+  border: 1px solid #333333;
+  padding: 5px 40px;
+  border-radius: 50px;
+  display: inline-block;
+  margin: 40px 0 190px;
+  font-size: 1.6rem;
+}
+/*---- main_box ----*/
+.main_box {
+  min-height: 1000px;
+  width: 100%;
+  background: url(../img/bg_pattern.png);
+}
+.main_box_inner {
+  width: 1024px;
+  position: relative;
+  margin: 0px auto;
+  top: -100px;
+}
+.page_box {
+  width: 1024px;
+  position: relative;
+  margin: 0px auto;
+  top: -40px;
+}
+.contents_box {
+  width: 100%;
+  margin: 0 0 50px;
+  background: url(../img/bg_box.gif) top center no-repeat #ffffff;
+  padding: 60px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.effect {
+  transition: 0.6s;
+  opacity: 0;
+  position: relative;
+  top: 80px;
+  display: block;
+}
+.contents_h2 {
+  font-size: 3.0rem;
+  color: #2e7e94;
+  border-bottom: 1px solid #ededed;
+  text-align: center;
+  padding: 0 0 30px;
+  margin: 20px 0 30px;
+}
+.contents_h2_s {
+  font-size: 1.4rem;
+  color: #2cafa1;
+}
+.read_text {
+  text-align: center;
+  margin: 0 80px;
+  font-size: 1.4rem;
+}
+.twitter_text {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 60px 0 0 0;
+}
+.twitter_text span {
+  background: #333333;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: normal;
+  padding: 4px 0 0 0;
+  margin: 0 5px 0 0;
+  box-sizing: border-box;
+}
+.twitter_text a {
+  color: #333333;
+}
+.btn_apply {
+  border: 4px solid #ffffff;
+  background: #2cafa1;
+  width: 650px;
+  padding: 35px 0;
+  color: #ffffff;
+  margin: 0 auto;
+  font-size: 2.4rem;
+  line-height: 1.0em;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+}
+.btn_apply:hover {
+  background: #de8d00;
+  opacity: 1;
+}
+.btn_apply span {
+  font-size: 1.2rem;
+}
+.btn_apply .icon-play3 {
+  font-size: 1.4rem;
+  vertical-align: baseline;
+  margin: 0 5px 0 0;
+}
+.read_box {
+  border-top: 1px solid #ededed;
+  padding: 30px 0 0;
+  margin: 40px 0 0 0;
+  text-align: center;
+}
+.read_box dl {
+  display: inline-block;
+  margin: 0 60px 0 0;
+  text-align: left;
+}
+.read_box dl dt {
+  color: #2cafa1;
+  margin: 0 10px 0 0;
+  font-size: 1.6rem;
+}
+.read_box dl dd {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+/*---- footer ----*/
+footer {
+  background: #18687e;
+  padding: 30px 0;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.pagetop {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  font-size: 77%;
+}
+.pagetop a {
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  padding: 8px 0 0;
+  box-sizing: border-box;
+}
+.pagetop a:hover {
+  opacity: 0.7;
+}
+.pagetop .icon-play3 {
+  display: block;
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+/*------ login.html ------*/
+.login_text {
+  margin: 100px 0 0 0;
+  text-align: center;
+}
+.btn_login_box {
+  width: 660px;
+  margin: 40px auto 340px;
+}
+.btn_login_box a {
+  color: #ffffff;
+  font-size: 2.4rem;
+  display: block;
+  width: 320px;
+  height: 60px;
+  text-align: center;
+  position: relative;
+  padding: 12px 0 0 0;
+  box-sizing: border-box;
+}
+.btn_login_git a {
+  background: #484848;
+  float: left;
+}
+.btn_login_git img {
+  width: 33px;
+  height: auto;
+  margin: 0 10px 0 0;
+  vertical-align: bottom;
+}
+.btn_login_tw a {
+  background: #00acee;
+  float: right;
+}
+.btn_login_tw .icon-twitter {
+  font-size: 3.2rem;
+  margin: 0 10px 0 0;
+  vertical-align: bottom;
+}
+.btn_login_box .icon-play3 {
+  position: absolute;
+  top: 23px;
+  right: 10px;
+  font-size: 1.4rem;
+}
+/*------ form.html ------*/
+.form_head {
+  border-bottom: 1px solid #ededed;
+  margin: 0 0 40px;
+  padding: 50px 0 30px;
+  text-align: center;
+}
+.ico_user {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+}
+.ico_user img {
+  width: 100%;
+  height: auto;
+}
+.name_user {
+  display: inline-block;
+  margin: -1em 0 0 0;
+  text-align: left;
+}
+.name_user span {
+  font-weight: bold;
+}
+.form_box {
+  width: 520px;
+  margin: 0 auto;
+}
+.form_guideline {
+  background: #2e7e94;
+  color: #ffffff;
+  padding: 30px;
+  margin: 0 0 40px;
+}
+.form_guideline h3 {
+  border-bottom: 1px solid #6da5b4;
+  text-align: center;
+  margin: 0 0 15px;
+  padding: 0 0 15px;
+  font-size: 1.6rem;
+}
+.form_guideline ul li, .list_disc li {
+  margin: 0 0 10px 20px;
+  list-style: disc;
+  line-height: 1.6em;
+}
+.form_h {
+  font-weight: bold;
+  font-size: 1.6rem;
+  background: url(../img/ico_blue.png) left center no-repeat #ffffff;
+  padding: 0 0 0 20px;
+  margin: 0 0 5px;
+}
+.form_h span {
+  color: #e70000;
+  font-weight: normal;
+  font-size: 1.4rem;
+  margin: 0 0 0 10px;
+}
+.form_box input, .form_box textarea {
+  border: 1px solid #d9d9d9;
+  background: #fbfbfb;
+  margin: 0 0 30px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  line-height: 1.8em;
+  border-radius: 0px;
+}
+.form_box input:focus, .form_box textarea:focus {
+  background: #fffdea;
+}
+.btn_submit {
+  display: block;
+  margin: 15px auto 0;
+  background: #2cafa1;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 2.4rem;
+  width: 320px;
+  height: 60px;
+  text-align: center;
+  position: relative;
+  padding: 3px 0 0 0;
+  box-sizing: border-box;
+}
+.btn_submit .icon-play3 {
+  position: absolute;
+  top: 23px;
+  right: 10px;
+  font-size: 1.4rem;
+}
+.btn_submit:hover {
+  background: #de8d00;
+}
+.speaker_box {
+  display: inline-block;
+  text-align: center;
+  margin: 0 40px;
+}
+.speaker_photo {
+  height: 210px;
+  width: 210px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+.speaker_photo img {
+  height: auto;
+  width: 100%;
+}
+.speaker_name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 20px 0 0 0;
+}
+.speaker_lang {
+  font-weight: normal;
+  font-size: 1.4rem;
+  margin: 0 0 0 10px;
+}
+.speaker_name i, .session_name i, .lightningtalk_box i {
+  margin: 0 0 0 5px;
+  font-size: 120%;
+}
+.speaker_name a, .session_name a, .lightningtalk_box a {
+  color: #2e7e94;
+}
+.speaker_read {
+  text-align: left;
+  margin: 10px 30px 0;
+}
+.info_box dl {
+  margin: 0 0 30px;
+  padding: 0 30px 30px;
+  border-bottom: dotted 1px #e6e6e6;
+}
+.info_box dl dt {
+  color: #2cafa1;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0 0 20px;
+  padding: 0 10px;
+  border-left: solid 3px #2cafa1;
+}
+.session_box {
+  margin: 40px 0 80px;
+}
+.session_photo {
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 10px 0 10px 0;
+  float: left;
+}
+.session_photo img {
+  height: auto;
+  width: 100%;
+}
+.session_txt {
+  float: right;
+  width: 720px;
+}
+.session_txt h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2cafa1;
+}
+.session_name {
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  border-bottom: dotted 1px #e6e6e6;
+  font-weight: bold;
+}
+.lightningtalk_box ul li {
+  margin: 0 0 30px;
+  width: 48%;
+  border-left: solid 3px #2cafa1;
+  padding: 0 0 0 15px;
+  box-sizing: border-box;
+}
+.lightningtalk_box ul li:nth-child(odd) {
+  float: left;
+}
+.lightningtalk_box ul li:nth-child(even) {
+  float: right;
+}
+.schedule_box {
+}
+.time-table li {
+  padding: 10px 20px;
+}
+.time-table li:nth-child(even) {
+  background: #efefef;
+}
+.time-table span {
+  font-weight: bold;
+  margin: 0 40px 0 0;
+}
+.sponsors_box {
+  text-align: center;
+}
+.sponsors_text {
+  color: #2cafa1;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin: 0 0 20px;
+}
+.sponsors_gold img, .sponsors_silver img, .sponsors_powered img {
+  width: 100%;
+  height: auto;
+}
+.sponsors_gold p, .sponsors_silver p {
+  text-align: center;
+}
+.sponsors_gold p {
+  width: 50%;
+  margin: 0 auto 30px;
+}
+.sponsors_silver {
+  margin: 0 120px;
+}
+.sponsors_silver p {
+  width: 48%;
+  margin: 0 0 30px;
+}
+.sponsors_silver p:nth-child(odd) {
+  float: left;
+}
+.sponsors_silver p:nth-child(even) {
+  float: right;
+}
+.sponsors_powered p {
+  width: 16%;
+  display: inline-block;
+  margin: 0 2% 20px;
+}
+
+/*===============================================
+ PC版のみ
+===============================================*/
+@media screen and (min-width: 768px) {
+body {
+  background-size: 100%;
+  min-width: 1024px;
+}
+.pc {
+  display: block;
+}
+.sp {
+  display: none;
+}
+.top_list {
+  margin: 0 0 0 200px;
+}
+}
+
+/*===============================================
+スマホ版のみ
+===============================================*/
+@media screen and (max-width: 767px) {
+.pc {
+  display: none;
+}
+.sp {
+  display: block;
+}
+body {
+  -webkit-text-size-adjust: 100%;
+  background: url(../img/bg_mv.png) no-repeat center center;
+  background-size: auto 100%;
+}
+/*-- header --*/
+header {
+  min-width: 100%;
+  padding: 10px;
+}
+.header_h1 {
+  font-size: 1.6rem;
+  margin: 10px 0 0 0;
+}
+.header_menu {
+  float: right;
+}
+.header_menu ul {
+  display: none;
+}
+.header_twitter_text span {
+  width: 40px;
+  height: 40px;
+  padding: 8px 0 0 0;
+  margin: 0 0 0 0;
+}
+/*-- mv_box --*/
+.mv_box {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 0 0 0;
+}
+.logo_erlang {
+  margin: 0 30px 10px 30px;
+  width: 45px;
+  height: auto;
+}
+.logo_elixir {
+  margin: 0 0 10px 0;
+  width: 100px;
+  height: auto;
+}
+.mv_title01, .mv_title02 {
+  font-size: 4.4rem;
+  margin: 0 0 20px;
+}
+.day_text {
+  margin: 50px 0 0 0;
+}
+.day_number_text {
+  font-size: 2.8rem;
+}
+.place-text {
+  font-size: 2.4rem;
+  line-height: 1.2em;
+  margin: 0px;
+}
+.map_link {
+  padding: 5px 40px;
+  font-size: 1.6rem;
+}
+.hash_text {
+  padding: 6px 60px;
+  margin: 20px 0 100px;
+  font-size: 2.0rem;
+}
+/*-- h_box --*/
+.h_box {
+  width: 100%;
+  height: 140px;
+  margin: 50px auto 0;
+  text-align: center;
+}
+.page_titile {
+  font-size: 2.2rem;
+  padding: 45px 0 0;
+  font-weight: bold;
+}
+/*---- main_box ----*/
+.main_box {
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.main_box_inner, .page_box {
+  width: 100%;
+  top: -40px;
+}
+.contents_box {
+  width: 100%;
+  margin: 0 0 20px;
+  background: url(../img/bg_box.gif) top center no-repeat #ffffff;
+  padding: 25px 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.read_text {
+  text-align: left;
+  margin: 0px;
+}
+.btn_apply {
+  width: 100%;
+  padding: 20px 0;
+  font-size: 1.8rem;
+}
+.contents_h2 {
+  font-size: 2.0rem;
+  padding: 0 0 20px;
+  margin: 20px 0 20px;
+}
+.twitter_text {
+  margin: 40px 0 0 0;
+}
+.twitter_text span {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  font-size: 13px;
+}
+/*---- footer ----*/
+.pagetop {
+  bottom: 10px;
+  right: 10px;
+}
+footer {
+  padding: 10px 0;
+}
+/*------ login.html ------*/
+.login_text {
+  margin: 40px 0 0 0;
+  text-align: center;
+}
+.btn_login_box {
+  width: 100%;
+  margin: 20px auto 100px;
+}
+.btn_login_box a {
+  width: 100%;
+  font-size: 2.0rem;
+}
+.btn_login_git a {
+  background: #484848;
+  float: none;
+  margin: 0 0 20px;
+}
+.btn_login_tw a {
+  background: #00acee;
+  float: none;
+}
+.btn_login_tw .icon-twitter {
+  font-size: 3.2rem;
+  margin: 0 10px 0 0;
+  vertical-align: bottom;
+}
+.btn_login_box .icon-play3 {
+  position: absolute;
+  top: 23px;
+  right: 10px;
+  font-size: 1.4rem;
+}
+/*------ form.html ------*/
+.form_head {
+  padding: 10px 0 20px;
+  margin: 0 0 30px;
+}
+.ico_user {
+  width: 50px;
+  height: 50px;
+}
+.name_user {
+  margin: -1em 0 0 5px;
+  font-size: 1.6rem;
+}
+.form_box {
+  width: 100%;
+  margin: 0 auto;
+}
+.form_h {
+  font-size: 1.4rem;
+}
+.form_guideline {
+  padding: 20px;
+  margin: 0 0 30px;
+}
+.form_guideline h3 {
+  margin: 10px 0 10px;
+  padding: 0 0 10px;
+  font-size: 1.6rem;
+}
+.form_box input, .form_box textarea {
+  margin: 0 0 20px;
+  font-size: 16px;
+}
+.btn_submit {
+  margin: 0px auto 0;
+  width: 100%;
+  font-size: 2.0rem;
+}
+.speaker_box {
+  margin: 0 auto;
+}
+.speaker_read {
+  margin: 10px 0px 0;
+}
+.info_box dl {
+  padding: 0 0px 30px;
+}
+.session_photo {
+  margin: 10px auto 10px;
+  float: none;
+}
+.session_txt {
+  float: none;
+  width: 100%;
+}
+.lightningtalk_box ul li {
+  width: 100%;
+}
+.lightningtalk_box ul li:nth-child(odd) {
+  float: none;
+}
+.lightningtalk_box ul li:nth-child(even) {
+  float: none;
+}
+.time-table li {
+  padding: 15px 10px;
+  line-height: 1.2em;
+}
+.time-table span {
+  font-weight: bold;
+  display: block;
+  margin: 0 0 5px;
+}
+.sponsors_gold p {
+  width: 100%;
+  margin: 0 auto 30px;
+}
+.sponsors_silver {
+  margin: 0px;
+}
+.sponsors_silver p {
+  width: 70%;
+  margin: 0 auto 15px;
+}
+.sponsors_silver p:nth-child(odd) {
+  float: none;
+}
+.sponsors_silver p:nth-child(even) {
+  float: none;
+}
+.sponsors_powered p {
+  width: 48%;
+  display: block;
+  margin: 0 0 15px;
+}
+.sponsors_powered p:nth-child(odd) {
+  float: left;
+}
+.sponsors_powered p:nth-child(even) {
+  float: right;
+}
+.read_box dl {
+  display: block;
+  margin: 0 0 20px;
+}
+}

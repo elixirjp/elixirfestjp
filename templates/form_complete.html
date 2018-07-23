@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block contents %}
+{% include "_header_menu.html" %}
+<div class="h_box">
+    <h2 class="page_titile">スピーカーに応募する</h2>
+</div>
+<section class="main_box">
+  <div class="page_box clearfix">
+    <div class="contents_box">
+      <p class="login_text">
+        応募を受け付けました。しばらくお待ち下さい。
+        <br><a href="{% url "index" %}">トップへ戻る</a>
+      </p>
+    </div>
+  </div>
+</section>
+{% endblock contents %}

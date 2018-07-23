@@ -1,0 +1,22 @@
+以下の内容で Erlang & Elixir Fest 2018 スピーカー応募がありました。
+
+[連絡先メールアドレス]
+{{ email }}
+
+[アカウント情報]
+{% spaceless %}
+{% if provider == 'github' %}
+https://github.com/{{ username }}
+{% elif provider == 'twitter' %}
+https://twitter.com/{{ username }}
+{% endif %}
+{% endspaceless %}
+
+[タイトル]
+{{ title }}
+
+[概要]
+{{ description }}
+
+[レビュアーへのメッセージ]
+{{ comment }}
