@@ -1,4 +1,4 @@
-bind = 'unix:/tmp/gunicorn.elixirconf.jp.sock'
+bind = 'unix:/tmp/gunicorn.2019.elixirconf.jp.sock'
 backlog = 2048
 workers = 2
 worker_connections = 1024
@@ -12,12 +12,12 @@ spew = False
 
 preload_app = True
 daemon = False
-pidfile = '/tmp/gunicorn_elixirconf.jp_live.pid'
+pidfile = '/tmp/gunicorn_2019_elixirconf.jp_live.pid'
 user = 'www-data'
 group = 'www-data'
 umask = 0o002
 
-logfile = '/var/log/supervisor/gunicorn.log'
+logfile = '/var/log/supervisor/gunicorn_2019.log'
 loglevel = 'debug'
 logconfig = None
 
