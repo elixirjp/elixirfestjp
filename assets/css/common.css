@@ -4,8 +4,7 @@ body {
   font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
   line-height: 1.8em;
   font-size: 1.4rem;
-  background: url(../img/bg_mv.png) no-repeat;
-  background-size: contain;
+  background: url(../img/bg_mv.png) center top no-repeat;
 }
 a, button {
   color: #de8d00;
@@ -28,9 +27,6 @@ div {
 .text_s {
   font-size: 90%;
 }
-.text_l {
-  font-size: 120%;
-}
 .text_red {
   color: #d60d0d;
 }
@@ -49,16 +45,16 @@ header {
   box-sizing: border-box;
 }
 header a {
-  color: #2a7b92;
+  color: #cb372c;
 }
 .header_h1 {
   font-size: 2.2rem;
   font-family: 'Ubuntu', sans-serif;
-  color: #2a7b92;
+  color: #cb372c;
   float: left;
 }
 .header_h1 span {
-  color: #2cafa1;
+  color: #7a8026;
 }
 .header_menu {
   float: right;
@@ -86,7 +82,7 @@ header a {
   float: right;
 }
 .header_twitter_text span {
-  background: #2a7b92;
+  background: #cb372c;
   width: 32px;
   height: 32px;
   text-align: center;
@@ -105,12 +101,11 @@ header a {
 /*-- h_box --*/
 .h_box {
   width: 1024px;
-  height: 170px;
-  margin: 60px auto 0;
+  margin: 100px auto;
   text-align: center;
 }
 .page_titile {
-  font-size: 2.6rem;
+  font-size: 3rem;
   padding: 55px 0 0;
   font-weight: bold;
 }
@@ -134,7 +129,7 @@ header a {
 .mv_title01 {
   font-size: 7.2rem;
   font-family: 'Ubuntu', sans-serif;
-  color: #2a7b92;
+  color: #cb372c;
   animation: title01 0.5s ease-out alternate;
   display: inline-block;
   margin: 0 10px 0 0;
@@ -152,7 +147,7 @@ header a {
 .mv_title02 {
   font-size: 7.2rem;
   font-family: 'Ubuntu', sans-serif;
-  color: #2cafa1;
+  color: #7a8026;
   animation: title02 0.5s ease-out alternate;
   display: inline-block;
 }
@@ -170,7 +165,7 @@ header a {
   margin: 90px 0 0 0;
 }
 .day_blue_text {
-  color: #2a7b92;
+  color: #cb372c;
   margin: 0 10px 0 0;
   position: relative;
   top: -5px;
@@ -183,7 +178,7 @@ header a {
   margin: 10px 0 0 0;
 }
 .map_link {
-  background: #2cafa1;
+  background: #cb372c;
   color: #ffffff;
   border-radius: 3px;
   padding: 5px 20px;
@@ -193,24 +188,48 @@ header a {
   line-height: 1.0em;
 }
 .hash_text {
-  border: 1px solid #333333;
+  border: 1px solid #cb372c;
   padding: 5px 40px;
   border-radius: 50px;
   display: inline-block;
-  margin: 40px 0 190px;
+  margin: 40px 0;
   font-size: 1.6rem;
+  color: #cb372c;
+  background-color: rgba(255,255,255,0.5);
 }
 /*---- main_box ----*/
-.main_box {
-  min-height: 1000px;
+
+.main_contents {
   width: 100%;
   background: url(../img/bg_pattern.png);
+}
+.main_box {
+  position: relative;
+  overflow: hidden;
+  padding: 40px 0;
+  z-index: 2;
+}
+.main_box:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  margin: 0 -15% 0;
+  background: #e1e2d9;
+  -webkit-transform-origin: right center;
+  -ms-transform-origin: right center;
+  transform-origin: right center;
+  -webkit-transform: rotate(-4deg);
+  -ms-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+  z-index: -1;
 }
 .main_box_inner {
   width: 1024px;
   position: relative;
   margin: 0px auto;
-  top: -100px;
 }
 .page_box {
   width: 1024px;
@@ -234,20 +253,16 @@ header a {
 }
 .contents_h2 {
   font-size: 3.0rem;
-  color: #2e7e94;
+  color: #cb372c;
   border-bottom: 1px solid #ededed;
   text-align: center;
   padding: 0 0 30px;
   margin: 20px 0 30px;
 }
-.contents_h2_s {
-  font-size: 1.4rem;
-  color: #2cafa1;
-}
 .read_text {
   text-align: center;
   margin: 0 80px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .twitter_text {
   font-size: 1.6rem;
@@ -274,7 +289,7 @@ header a {
 }
 .btn_apply {
   border: 4px solid #ffffff;
-  background: #2cafa1;
+  background: #cb372c;
   width: 650px;
   padding: 35px 0;
   color: #ffffff;
@@ -286,7 +301,7 @@ header a {
   text-align: center;
 }
 .btn_apply:hover {
-  background: #de8d00;
+  background: #ef837b;
   opacity: 1;
 }
 .btn_apply span {
@@ -297,39 +312,24 @@ header a {
   vertical-align: baseline;
   margin: 0 5px 0 0;
 }
-.read_box {
-  border-top: 1px solid #ededed;
-  padding: 30px 0 0;
-  margin: 40px 0 0 0;
-  text-align: center;
-}
-.read_box dl {
-  display: inline-block;
-  margin: 0 60px 0 0;
-  text-align: left;
-}
-.read_box dl dt {
-  color: #2cafa1;
-  margin: 0 10px 0 0;
-  font-size: 1.6rem;
-}
-.read_box dl dd {
-  font-weight: bold;
-  font-size: 1.8rem;
-}
 /*---- footer ----*/
 footer {
-  background: #18687e;
+  background: url(../img/bg_pattern.png);
   padding: 30px 0;
   color: #ffffff;
   text-align: center;
   font-size: 1.2rem;
+}
+footer p {
+  margin: 0;
+  padding: 0;
 }
 .pagetop {
   position: fixed;
   bottom: 50px;
   right: 20px;
   font-size: 77%;
+  z-index: 3;
 }
 .pagetop a {
   background: rgba(0, 0, 0, 0.5);
@@ -354,6 +354,9 @@ footer {
   transform: rotate(-90deg);
 }
 /*------ login.html ------*/
+.login_contents .main_box {
+  padding-top: 80px;
+}
 .login_text {
   margin: 100px 0 0 0;
   text-align: center;
@@ -418,7 +421,7 @@ footer {
 }
 .name_user {
   display: inline-block;
-  margin: -1em 0 0 0;
+  margin: -1em 0 0 15px;
   text-align: left;
 }
 .name_user span {
@@ -429,7 +432,7 @@ footer {
   margin: 0 auto;
 }
 .form_guideline {
-  background: #2e7e94;
+  background: #7a8026;
   color: #ffffff;
   padding: 30px;
   margin: 0 0 40px;
@@ -475,7 +478,7 @@ footer {
 .btn_submit {
   display: block;
   margin: 15px auto 0;
-  background: #2cafa1;
+  background: #cb372c;
   border: none;
   color: #ffffff;
   cursor: pointer;
@@ -494,165 +497,27 @@ footer {
   font-size: 1.4rem;
 }
 .btn_submit:hover {
-  background: #de8d00;
-}
-.speaker_box {
-  display: inline-block;
-  text-align: center;
-  margin: 0 40px;
-}
-.speaker_photo {
-  height: 210px;
-  width: 210px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin: 0 auto 10px;
-}
-.speaker_photo img {
-  height: auto;
-  width: 100%;
-}
-.speaker_name {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin: 20px 0 0 0;
-}
-.speaker_lang {
-  font-weight: normal;
-  font-size: 1.4rem;
-  margin: 0 0 0 10px;
-}
-.speaker_name i, .session_name i, .lightningtalk_box i {
-  margin: 0 0 0 5px;
-  font-size: 120%;
-}
-.speaker_name a, .session_name a, .lightningtalk_box a {
-  color: #2e7e94;
-}
-.speaker_read {
-  text-align: left;
-  margin: 10px 30px 0;
-}
-.info_box dl {
-  margin: 0 0 30px;
-  padding: 0 30px 30px;
-  border-bottom: dotted 1px #e6e6e6;
-}
-.info_box dl dt {
-  color: #2cafa1;
-  font-size: 1.6rem;
-  font-weight: bold;
-  margin: 0 0 20px;
-  padding: 0 10px;
-  border-left: solid 3px #2cafa1;
-}
-.session_box {
-  margin: 40px 0 80px;
-}
-.session_photo {
-  height: 150px;
-  width: 150px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin: 10px 0 10px 0;
-  float: left;
-}
-.session_photo img {
-  height: auto;
-  width: 100%;
-}
-.session_txt {
-  float: right;
-  width: 720px;
-}
-.session_txt h3 {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #2cafa1;
-}
-.session_name {
-  margin: 0 0 10px;
-  padding: 0 0 10px;
-  border-bottom: dotted 1px #e6e6e6;
-  font-weight: bold;
-}
-.lightningtalk_box ul li {
-  margin: 0 0 30px;
-  width: 48%;
-  border-left: solid 3px #2cafa1;
-  padding: 0 0 0 15px;
-  box-sizing: border-box;
-}
-.lightningtalk_box ul li:nth-child(odd) {
-  float: left;
-}
-.lightningtalk_box ul li:nth-child(even) {
-  float: right;
-}
-.schedule_box {
-}
-.time-table li {
-  padding: 10px 20px;
-}
-.time-table li:nth-child(even) {
-  background: #efefef;
-}
-.time-table span {
-  font-weight: bold;
-  margin: 0 40px 0 0;
-}
-.sponsors_box {
-  text-align: center;
-}
-.sponsors_text {
-  color: #2cafa1;
-  font-weight: bold;
-  font-size: 1.8rem;
-  margin: 0 0 20px;
-}
-.sponsors_gold img, .sponsors_silver img, .sponsors_powered img {
-  width: 100%;
-  height: auto;
-}
-.sponsors_gold p, .sponsors_silver p {
-  text-align: center;
-}
-.sponsors_gold p {
-  width: 50%;
-  margin: 0 auto 30px;
-}
-.sponsors_silver {
-  margin: 0 120px;
-}
-.sponsors_silver p {
-  width: 48%;
-  margin: 0 0 30px;
-}
-.sponsors_silver p:nth-child(odd) {
-  float: left;
-}
-.sponsors_silver p:nth-child(even) {
-  float: right;
-}
-.sponsors_powered p {
-  width: 16%;
-  display: inline-block;
-  margin: 0 2% 20px;
+  background: #ef837b;
 }
 
 /*===============================================
  PC版のみ
 ===============================================*/
-@media screen and (min-width: 768px) {
-body {
-  background-size: 100%;
-  min-width: 1024px;
+@media screen and (min-width: 1920px) {
+  body {
+    background-size: 100% auto;
+  }
 }
+@media screen and (min-width: 768px) {
 .pc {
   display: block;
 }
 .sp {
   display: none;
+}
+.main_contents,
+footer {
+  min-width: 1024px;
 }
 .top_list {
   margin: 0 0 0 200px;
@@ -670,9 +535,7 @@ body {
   display: block;
 }
 body {
-  -webkit-text-size-adjust: 100%;
-  background: url(../img/bg_mv.png) no-repeat center center;
-  background-size: auto 100%;
+  background-image: url(../img/bg_mv_sp.png);
 }
 /*-- header --*/
 header {
@@ -695,6 +558,9 @@ header {
   padding: 8px 0 0 0;
   margin: 0 0 0 0;
 }
+.main_box:before {
+  width: 140%;
+}
 /*-- mv_box --*/
 .mv_box {
   width: 100%;
@@ -703,21 +569,21 @@ header {
   padding: 50px 0 0 0;
 }
 .logo_erlang {
-  margin: 0 30px 10px 30px;
+  margin: 0 30px 25px 30px;
   width: 45px;
   height: auto;
 }
 .logo_elixir {
-  margin: 0 0 10px 0;
+  margin: 0 0 25px 0;
   width: 100px;
   height: auto;
 }
 .mv_title01, .mv_title02 {
   font-size: 4.4rem;
-  margin: 0 0 20px;
+  margin: 0 0 25px;
 }
 .day_text {
-  margin: 50px 0 0 0;
+  margin: 40px 0 0 0;
 }
 .day_number_text {
   font-size: 2.8rem;
@@ -725,7 +591,6 @@ header {
 .place-text {
   font-size: 2.4rem;
   line-height: 1.2em;
-  margin: 0px;
 }
 .map_link {
   padding: 5px 40px;
@@ -733,30 +598,34 @@ header {
 }
 .hash_text {
   padding: 6px 60px;
-  margin: 20px 0 100px;
+  margin: 30px 0;
   font-size: 2.0rem;
 }
 /*-- h_box --*/
 .h_box {
   width: 100%;
-  height: 140px;
-  margin: 50px auto 0;
+  margin: 80px auto;
   text-align: center;
 }
 .page_titile {
   font-size: 2.2rem;
-  padding: 45px 0 0;
   font-weight: bold;
 }
 /*---- main_box ----*/
 .main_box {
   width: 100%;
-  padding: 0 20px;
+  padding: 0 20px 40px;
   box-sizing: border-box;
 }
-.main_box_inner, .page_box {
+.main_box_inner {
   width: 100%;
-  top: -40px;
+  top: 20px;
+}
+.login_contents .main_box {
+  padding-top: 60px;
+}
+.page_box {
+  width: 100%;
 }
 .contents_box {
   width: 100%;
@@ -772,7 +641,7 @@ header {
 .btn_apply {
   width: 100%;
   padding: 20px 0;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 .contents_h2 {
   font-size: 2.0rem;
@@ -866,72 +735,5 @@ footer {
   margin: 0px auto 0;
   width: 100%;
   font-size: 2.0rem;
-}
-.speaker_box {
-  margin: 0 auto;
-}
-.speaker_read {
-  margin: 10px 0px 0;
-}
-.info_box dl {
-  padding: 0 0px 30px;
-}
-.session_photo {
-  margin: 10px auto 10px;
-  float: none;
-}
-.session_txt {
-  float: none;
-  width: 100%;
-}
-.lightningtalk_box ul li {
-  width: 100%;
-}
-.lightningtalk_box ul li:nth-child(odd) {
-  float: none;
-}
-.lightningtalk_box ul li:nth-child(even) {
-  float: none;
-}
-.time-table li {
-  padding: 15px 10px;
-  line-height: 1.2em;
-}
-.time-table span {
-  font-weight: bold;
-  display: block;
-  margin: 0 0 5px;
-}
-.sponsors_gold p {
-  width: 100%;
-  margin: 0 auto 30px;
-}
-.sponsors_silver {
-  margin: 0px;
-}
-.sponsors_silver p {
-  width: 70%;
-  margin: 0 auto 15px;
-}
-.sponsors_silver p:nth-child(odd) {
-  float: none;
-}
-.sponsors_silver p:nth-child(even) {
-  float: none;
-}
-.sponsors_powered p {
-  width: 48%;
-  display: block;
-  margin: 0 0 15px;
-}
-.sponsors_powered p:nth-child(odd) {
-  float: left;
-}
-.sponsors_powered p:nth-child(even) {
-  float: right;
-}
-.read_box dl {
-  display: block;
-  margin: 0 0 20px;
 }
 }

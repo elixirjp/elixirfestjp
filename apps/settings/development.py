@@ -3,7 +3,7 @@ from .base import *  # noqa
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'elixir-fest2018',
+        'NAME': 'elixir-fest2019',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'db',

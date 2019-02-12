@@ -5,24 +5,24 @@
 <div class="mv_box">
     <p><img class="logo_erlang" src="{% static 'img/logo_Erlang.png' %}" alt="Erlang"><img class="logo_elixir" src="{% static 'img/logo_elixir.png' %}" alt="elixir"></p>
     <h1 class="mv_title01">Erlang &amp; Elixir</h1>
-    <h1 class="mv_title02">Fest 2018</h1>
-    <p class="day_text"><span class="day_blue_text">開催日</span><span class="day_number_text">2018</span>年 <span class="day_number_text">6</span>月<span class="day_number_text">16</span>日(土)</p>
-    <p class="place-text">秋葉原コンベンションホール <a class="map_link" href="https://www.google.co.jp/maps/place/%E7%A7%8B%E8%91%89%E5%8E%9F%E3%82%B3%E3%83%B3%E3%83%99%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%9B%E3%83%BC%E3%83%AB/@35.6991943,139.7699329,17z/data=!3m1!4b1!4m5!3m4!1s0x60188c1d6fb74207:0xe6100facc0f6dc34!8m2!3d35.6991943!4d139.7721216?dcr=0" target="_blank">MAP</a></p>
+    <h1 class="mv_title02">Fest 2019</h1>
+    <p class="day_text"><span class="day_blue_text">開催日</span><span class="day_number_text">2019</span>年 <span class="day_number_text">6</span>月<span class="day_number_text">1</span>日(土)</p>
+    <p class="place-text">永田町 JA共済ビル<a class="map_link" href="https://goo.gl/maps/m5ddhWNNbXD2" target="_blank">MAP</a></p>
     <p class="hash_text">#elixirfest</p>
 </div>
 <section class="main_box">
   <div class="main_box_inner clearfix">
     <div class="contents_box effect">
       {% if status_public %}
-      <p class="text_l">昨年 Elixir Conf Japan として日本初の Elixir カンファレンスを開催してから一年の間で、 Elixir は日本でもプロダクションでの利用事例が数多く見られるようになってきました。今年は Erlang の名前も冠して、Erlang & Elixir Fest. 2018 として、ベースとなるErlangの技術にも注目しつつ、実戦投入されているより具体的な事例を見ながら、日本の Erlang & Elixir ユーザを盛り上げていければと考えています。</p>
+      <p class="text_l">昨年 Elixir Conf Japan として日本初の Elixir カンファレンスを開催してから一年の間で、 Elixir は日本でもプロダクションでの利用事例が数多く見られるようになってきました。今年は Erlang の名前も冠して、Erlang & Elixir Fest. 2019 として、ベースとなるErlangの技術にも注目しつつ、実戦投入されているより具体的な事例を見ながら、日本の Erlang & Elixir ユーザを盛り上げていければと考えています。</p>
       <div class="read_box">
         <dl>
           <dt>開催日</dt>
-          <dd>2018年6月16日(土)</dd>
+          <dd>2019年6月1日(土)</dd>
         </dl>
         <dl>
           <dt>会場</dt>
-          <dd>秋葉原コンベンションホール</dd>
+          <dd>永田町 JA共済ビル</dd>
         </dl>
         <dl>
           <dt>会費(懇親会費込み)</dt>
@@ -44,7 +44,7 @@
         {% endfor %}
       </div>
     </div>
-    <p><a class="btn_apply" href="{{ connpass_url }}" target="_blank"><i class="icon-play3"></i>Erlang &amp; Elixir Fest 2018 に応募する</a></p>
+    <p><a class="btn_apply" href="{{ connpass_url }}" target="_blank"><i class="icon-play3"></i>Erlang &amp; Elixir Fest 2019 に応募する</a></p>
     {% if news_list %}
     <div class="contents_box effect  mt70">
       <h2 class="contents_h2">お知らせ<br>
@@ -114,7 +114,7 @@
         <p class="mt20 text_red">セッションと並行してハンズオンも開催されます。</p>
       </div>
     </div>
-    <p><a class="btn_apply" href="{{ connpass_url }}" target="_blank"><i class="icon-play3"></i>Erlang &amp; Elixir Fest 2018 に応募する</a></p>
+    <p><a class="btn_apply" href="{{ connpass_url }}" target="_blank"><i class="icon-play3"></i>Erlang &amp; Elixir Fest 2019 に応募する</a></p>
     <div class="contents_box effect mt70">
       <h2 class="contents_h2 mb0">地図<br>
         <span class="contents_h2_s">Map</span></h2>
@@ -147,24 +147,25 @@
       </div>
       {% endif %}
       {% if status_accepting or status_end_accepting %}
-      <h2 class="contents_h2">Erlang &amp; Elixir Fest. 2018 スピーカーの募集</h2>
-      <p class="mt20 read_text">
-        昨年開催された Elixir Conf Japan 2017 は Elixir の日本初のカンファレンスとして好評いただきました。
-        <br>今年からは Erlang についてもタイトルに冠して、
-        <br>Erlang &amp; Elixir Fest. と改め、より幅広い方にご参加いただければと思います。
-
-        <br>発表セッションについて募集を開始いたします。
-        <br>以下の内容をご確認の上、ご応募をお願いいたします。
+      <h2 class="contents_h2">Erlang &amp; Elixir Fest 2019 スピーカーの募集</h2>
+      <p class="read_text">
+        Erlang &amp; Elixir Fest は今年で3回目を迎え、
+        <br>6月1日(土) に、永田町 JA共済ビルで、開催いたします。
       </p>
+      <p class="mt20 read_text">前回は、既に様々な場面で使われていた Erlang だけでなく、
+        <br>Elixir もプロダクションでの稼働が多く増えた印象がありました。
+        <br>今回もまた、さらに様々な箇所で活躍するようになった話や、
+        <br>改良され続ける Erlang &amp; Elixir の興味深い話があるだろうかと思います。
+      </p>
+      <p class="mt20 read_text">つきまして、セッション講演者の公募を開始いたします。</p>
       <ul class="mt40 top_list list_disc">
-        <li>発表内容はErlang,Elixirのいずれかに関係するものであること。</li>
-        <li>発表時間は質疑応答を含めて30分であること。</li>
-        <li>発表内容は日本語であること。もしくは英語であること。</li>
-        <li>応募締め切りは3月31日 23:59分 JSTです。</li>
-        <li>発表の選考方法は、実行委員がバランスを考えて選考いたします。</li>
-        <li>募集枠は8枠です。</li>
-        <li>発表者は、イベントへはチケット購入せずご参加いただけます。</li>
-        <li>選考結果は、4月中旬にご連絡予定です。</li>
+        <li>発表内容は、Erlang, Elixir のいずれかに関係すること</li>
+        <li>発表時間は、質疑応答を含めて、25分以内であること</li>
+        <li>発表内容は、日本語か英語であること</li>
+        <li>応募締め切りは、2019年3月15日 00:00 JST です</li>
+        <li>講演者の選考方法は、実行委員がバランスを考慮し、選考させていただきます</li>
+        <li>講演者として採択された方は、イベントの参加チケットは提供させていただきます</li>
+        <li>採択結果は、4月初め頃までにご連絡させていただく予定です</li>
       </ul>
       <p class="twitter_text"><a href="https://twitter.com/elixirfest" target="_blank"><span><i class="icon-twitter"></i></span>最新情報はTwitterをフォロー<br class="sp">してください</a></p>
     </div>
