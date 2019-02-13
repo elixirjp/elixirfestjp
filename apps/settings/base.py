@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
 
 AUTHENTICATION_BACKENDS = (
@@ -165,3 +166,5 @@ PUBLICATION_STATUS_END_ACCEPTING = 2
 PUBLICATION_STATUS_PUBLIC = 3
 # サイトの表示ステータス
 PUBLICATION_STATUS = PUBLICATION_STATUS_ACCEPTING
+
+SOCIAL_AUTH_LOGIN_ERROR_URL = '/entry/'
