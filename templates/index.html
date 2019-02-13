@@ -10,171 +10,173 @@
     <p class="place-text">永田町 JA共済ビル<a class="map_link" href="https://goo.gl/maps/m5ddhWNNbXD2" target="_blank">MAP</a></p>
     <p class="hash_text">#elixirfest</p>
 </div>
-<section class="main_box">
-  <div class="main_box_inner clearfix">
-    <div class="contents_box effect">
-      {% if status_public %}
-      <p class="text_l">昨年 Elixir Conf Japan として日本初の Elixir カンファレンスを開催してから一年の間で、 Elixir は日本でもプロダクションでの利用事例が数多く見られるようになってきました。今年は Erlang の名前も冠して、Erlang & Elixir Fest. 2019 として、ベースとなるErlangの技術にも注目しつつ、実戦投入されているより具体的な事例を見ながら、日本の Erlang & Elixir ユーザを盛り上げていければと考えています。</p>
-      <div class="read_box">
-        <dl>
-          <dt>開催日</dt>
-          <dd>2019年6月1日(土)</dd>
-        </dl>
-        <dl>
-          <dt>会場</dt>
-          <dd>永田町 JA共済ビル</dd>
-        </dl>
-        <dl>
-          <dt>会費(懇親会費込み)</dt>
-          <dd>一般: 6,000円 学生: 3,000円</dd>
-        </dl>
-      </div>
-    </div>
-    <div class="contents_box effect">
-      <h2 class="contents_h2">講演者<br>
-        <span class="contents_h2_s">KEYNOTE SPEAKERS</span></h2>
-      <div class="center mb40"> 
-        <!--speaker_box-->
-        {% for session in keynote_sessions %}
-        <div class="speaker_box">
-          <div class="speaker_photo"><img src="{{ session.speaker_icon.url }}" alt=""></div>
-          <p class="speaker_name">{{ session.speaker }}{% if session.twitter_link %}<a href="{{ session.twitter_link }}" target="_blank"><i class="icon-twitter"></i></a>{% endif %}</p>
-          <p class="speaker_read">{{ session.content }}</p>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-    <p><a class="btn_apply" href="{{ connpass_url }}" target="_blank"><i class="icon-play3"></i>Erlang &amp; Elixir Fest 2019 に応募する</a></p>
-    {% if news_list %}
-    <div class="contents_box effect  mt70">
-      <h2 class="contents_h2">お知らせ<br>
-        <span class="contents_h2_s">Information</span></h2>
-      <div class="info_box">
-        {% for news in news_list %}
-        <dl>
-          <dt>{{ news.title }}</dt>
-          <dd>{{ news.content|linebreaksbr }}</dd>
-        </dl>
-        {% endfor %}
-      </div>
-    </div>
-    {% endif %}
-    <div class="contents_box effect mt70">
-      <h2 class="contents_h2">セッション一覧<br>
-        <span class="contents_h2_s">Session</span></h2>
-      {% for session in sessions %}
-      <div class="session_box clearfix">
-        <div class="session_photo"><img src="{{ session.speaker_icon.url }}" alt=""></div>
-        <div class="session_txt">
-          <h3>{{ session.title }}</h3>
-          <p class="session_name">{{ session.speaker }}</p>
-          <p>{{ session.content|linebreaksbr }}</p>
+<section class="main_contents">
+  <section class="main_box">
+    <div class="main_box_inner clearfix">
+      <div class="contents_box effect">
+        {% if status_public %}
+        <p class="text_l">昨年 Elixir Conf Japan として日本初の Elixir カンファレンスを開催してから一年の間で、 Elixir は日本でもプロダクションでの利用事例が数多く見られるようになってきました。今年は Erlang の名前も冠して、Erlang & Elixir Fest. 2019 として、ベースとなるErlangの技術にも注目しつつ、実戦投入されているより具体的な事例を見ながら、日本の Erlang & Elixir ユーザを盛り上げていければと考えています。</p>
+        <div class="read_box">
+          <dl>
+            <dt>開催日</dt>
+            <dd>2019年6月1日(土)</dd>
+          </dl>
+          <dl>
+            <dt>会場</dt>
+            <dd>永田町 JA共済ビル</dd>
+          </dl>
+          <dl>
+            <dt>会費(懇親会費込み)</dt>
+            <dd>一般: 6,000円 学生: 3,000円</dd>
+          </dl>
         </div>
       </div>
-      {% endfor %}
-    </div>
-    <div class="contents_box effect">
-      <h2 class="contents_h2">ライトニングトークについて<br>
-        <span class="contents_h2_s">Lightning Talk</span></h2>
-      <div class="lightningtalk_box">
-        <ul class="clearfix">
-          {% for session in lt_sessions %}
-          <li>{{ session.title }}<br>
-            {% if session.twitter_link %}
-            <a href="{{ session.twitter_link }}" target="_blank"><i class="icon-twitter"></i>{{ session.speaker }}</a><a href="{{ session.twitter_link }}" target="_blank"></a>
-            {% endif %}
-          </li>
+      <div class="contents_box effect">
+        <h2 class="contents_h2">講演者<br>
+          <span class="contents_h2_s">KEYNOTE SPEAKERS</span></h2>
+        <div class="center mb40"> 
+          <!--speaker_box-->
+          {% for session in keynote_sessions %}
+          <div class="speaker_box">
+            <div class="speaker_photo"><img src="{{ session.speaker_icon.url }}" alt=""></div>
+            <p class="speaker_name">{{ session.speaker }}{% if session.twitter_link %}<a href="{{ session.twitter_link }}" target="_blank"><i class="icon-twitter"></i></a>{% endif %}</p>
+            <p class="speaker_read">{{ session.content }}</p>
+          </div>
           {% endfor %}
-        </ul>
-      </div>
-    </div>
-    <div class="contents_box effect">
-      <h2 class="contents_h2">スケジュールについて<br>
-        <span class="contents_h2_s">Schedule</span></h2>
-      <div class="schedule_box">
-        <ul class="time-table">
-          <li><span>10:00</span> 開場</li>
-          <li><span>10:30</span> 開会の挨拶</li>
-          <li><span>10:40</span> セッション1</li>
-          <li><span>11:10</span> セッション2</li>
-          <li><span>11:40</span> 休憩</li>
-          <li><span>12:00</span> セッション3</li>
-          <li><span>12:30</span> セッション4</li>
-          <li><span>13:00</span> ランチ休憩</li>
-          <li><span>14:30</span> セッション5</li>
-          <li><span>15:00</span> セッション6</li>
-          <li><span>15:30</span> 休憩</li>
-          <li><span>15:50</span> セッション7</li>
-          <li><span>16:20</span> セッション8</li>
-          <li><span>16:50</span> 休憩</li>
-          <li><span>17:10</span> LT Time</li>
-          <li><span>18:00</span> キーノート</li>
-          <li><span>19:10</span> 閉会</li>
-        </ul>
-        <p class="mt20 text_red">セッションと並行してハンズオンも開催されます。</p>
-      </div>
-    </div>
-    <p><a class="btn_apply" href="{{ connpass_url }}" target="_blank"><i class="icon-play3"></i>Erlang &amp; Elixir Fest 2019 に応募する</a></p>
-    <div class="contents_box effect mt70">
-      <h2 class="contents_h2 mb0">地図<br>
-        <span class="contents_h2_s">Map</span></h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.0984734783174!2d139.7699329152593!3d35.69919428019008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c1d6fb74207%3A0xe6100facc0f6dc34!2z56eL6JGJ5Y6f44Kz44Oz44OZ44Oz44K344On44Oz44Ob44O844Or!5e0!3m2!1sja!2sjp!4v1523421322558" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-    <div class="contents_box effect">
-      <h2 class="contents_h2">スポンサーについて<br>
-        <span class="contents_h2_s">Sponsors</span></h2>
-      <div class="sponsors_box">
-        <h3 class="sponsors_text">GOLD SPONSORS</h3>
-        <div class="sponsors_gold mb100">
-          <p><a href="https://aktsk.jp/" target="_blank"><img src="{% static 'img/logo_akatsuki.png' %}" alt="Akatsuki"></a></p>
-          <p><a href="http://www.drecom.co.jp/" target="_blank"><img src="{% static 'img/logo_drecom.png' %}" alt="dricom"></a></p>
-          <p><a href="http://dwango.co.jp/" target="_blank"><img src="{% static 'img/logo_dwango.png' %}" alt="dwango"></a></p>
-          <p class="mt50"><a href="https://gu3.co.jp/" target="_blank"><img src="{% static 'img/logo_gumi.png' %}" alt="gumi"></a></p>
-          <p><a href="https://xflag.com/" target="_blank"><img src="{% static 'img/logo_mixi.png' %}" alt="mixi"></a></p>
         </div>
-        <h3 class="sponsors_text">SILVER SPONSORS</h3>
-        <div class="sponsors_silver clearfix mb100">
-          <p><a href="https://forkwell.com/" target="_blank"><img src="{% static 'img/logo_forkwell.png' %}" alt=""></a></p>
-          <p><a href="https://linecorp.com/ja/" target="_blank"><img src="{% static 'img/logo_line.png' %}" alt=""></a></p>
-        </div> 
-        <h3 class="sponsors_text">Powered by </h3>
-        <div class="sponsors_powered clearfix">
-          <p><a href="https://conbu.net/" target="_blank"><img src="{% static 'img/logo_conbu.png' %}" alt=""></a></p>
-          <p><a href="http://www.bbtower.co.jp/" target="_blank"><img src="{% static 'img/logo_bbtower.png' %}" alt=""></a></p>
-          <p><a href="https://www.sakura.ad.jp/" target="_blank"><img src="{% static 'img/logo_sakura.jpg' %}" alt=""></a></p>
+      </div>
+      <p><a class="btn_apply" href="{{ connpass_url }}" target="_blank"><i class="icon-play3"></i>Erlang &amp; Elixir Fest 2019 に応募する</a></p>
+      {% if news_list %}
+      <div class="contents_box effect  mt70">
+        <h2 class="contents_h2">お知らせ<br>
+          <span class="contents_h2_s">Information</span></h2>
+        <div class="info_box">
+          {% for news in news_list %}
+          <dl>
+            <dt>{{ news.title }}</dt>
+            <dd>{{ news.content|linebreaksbr }}</dd>
+          </dl>
+          {% endfor %}
         </div>
-        <p class="center mt70 text_l">スポンサーについてご興味を持たれた企業様はメール(<a href="mailto:elixirfestjp@gmail.com">elixirfestjp@gmail.com</a>)にてお問い合わせお願いします。</p>
       </div>
       {% endif %}
-      {% if status_accepting or status_end_accepting %}
-      <h2 class="contents_h2">Erlang &amp; Elixir Fest 2019 スピーカーの募集</h2>
-      <p class="read_text">
-        Erlang &amp; Elixir Fest は今年で3回目を迎え、
-        <br>6月1日(土) に、永田町 JA共済ビルで、開催いたします。
-      </p>
-      <p class="mt20 read_text">前回は、既に様々な場面で使われていた Erlang だけでなく、
-        <br>Elixir もプロダクションでの稼働が多く増えた印象がありました。
-        <br>今回もまた、さらに様々な箇所で活躍するようになった話や、
-        <br>改良され続ける Erlang &amp; Elixir の興味深い話があるだろうかと思います。
-      </p>
-      <p class="mt20 read_text">つきまして、セッション講演者の公募を開始いたします。</p>
-      <ul class="mt40 top_list list_disc">
-        <li>発表内容は、Erlang, Elixir のいずれかに関係すること</li>
-        <li>発表時間は、質疑応答を含めて、25分以内であること</li>
-        <li>発表内容は、日本語か英語であること</li>
-        <li>応募締め切りは、2019年3月15日 00:00 JST です</li>
-        <li>講演者の選考方法は、実行委員がバランスを考慮し、選考させていただきます</li>
-        <li>講演者として採択された方は、イベントの参加チケットは提供させていただきます</li>
-        <li>採択結果は、4月初め頃までにご連絡させていただく予定です</li>
-      </ul>
-      <p class="twitter_text"><a href="https://twitter.com/elixirfest" target="_blank"><span><i class="icon-twitter"></i></span>最新情報はTwitterをフォロー<br class="sp">してください</a></p>
+      <div class="contents_box effect mt70">
+        <h2 class="contents_h2">セッション一覧<br>
+          <span class="contents_h2_s">Session</span></h2>
+        {% for session in sessions %}
+        <div class="session_box clearfix">
+          <div class="session_photo"><img src="{{ session.speaker_icon.url }}" alt=""></div>
+          <div class="session_txt">
+            <h3>{{ session.title }}</h3>
+            <p class="session_name">{{ session.speaker }}</p>
+            <p>{{ session.content|linebreaksbr }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="contents_box effect">
+        <h2 class="contents_h2">ライトニングトークについて<br>
+          <span class="contents_h2_s">Lightning Talk</span></h2>
+        <div class="lightningtalk_box">
+          <ul class="clearfix">
+            {% for session in lt_sessions %}
+            <li>{{ session.title }}<br>
+              {% if session.twitter_link %}
+              <a href="{{ session.twitter_link }}" target="_blank"><i class="icon-twitter"></i>{{ session.speaker }}</a><a href="{{ session.twitter_link }}" target="_blank"></a>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="contents_box effect">
+        <h2 class="contents_h2">スケジュールについて<br>
+          <span class="contents_h2_s">Schedule</span></h2>
+        <div class="schedule_box">
+          <ul class="time-table">
+            <li><span>10:00</span> 開場</li>
+            <li><span>10:30</span> 開会の挨拶</li>
+            <li><span>10:40</span> セッション1</li>
+            <li><span>11:10</span> セッション2</li>
+            <li><span>11:40</span> 休憩</li>
+            <li><span>12:00</span> セッション3</li>
+            <li><span>12:30</span> セッション4</li>
+            <li><span>13:00</span> ランチ休憩</li>
+            <li><span>14:30</span> セッション5</li>
+            <li><span>15:00</span> セッション6</li>
+            <li><span>15:30</span> 休憩</li>
+            <li><span>15:50</span> セッション7</li>
+            <li><span>16:20</span> セッション8</li>
+            <li><span>16:50</span> 休憩</li>
+            <li><span>17:10</span> LT Time</li>
+            <li><span>18:00</span> キーノート</li>
+            <li><span>19:10</span> 閉会</li>
+          </ul>
+          <p class="mt20 text_red">セッションと並行してハンズオンも開催されます。</p>
+        </div>
+      </div>
+      <p><a class="btn_apply" href="{{ connpass_url }}" target="_blank"><i class="icon-play3"></i>Erlang &amp; Elixir Fest 2019 に応募する</a></p>
+      <div class="contents_box effect mt70">
+        <h2 class="contents_h2 mb0">地図<br>
+          <span class="contents_h2_s">Map</span></h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.0984734783174!2d139.7699329152593!3d35.69919428019008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c1d6fb74207%3A0xe6100facc0f6dc34!2z56eL6JGJ5Y6f44Kz44Oz44OZ44Oz44K344On44Oz44Ob44O844Or!5e0!3m2!1sja!2sjp!4v1523421322558" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="contents_box effect">
+        <h2 class="contents_h2">スポンサーについて<br>
+          <span class="contents_h2_s">Sponsors</span></h2>
+        <div class="sponsors_box">
+          <h3 class="sponsors_text">GOLD SPONSORS</h3>
+          <div class="sponsors_gold mb100">
+            <p><a href="https://aktsk.jp/" target="_blank"><img src="{% static 'img/logo_akatsuki.png' %}" alt="Akatsuki"></a></p>
+            <p><a href="http://www.drecom.co.jp/" target="_blank"><img src="{% static 'img/logo_drecom.png' %}" alt="dricom"></a></p>
+            <p><a href="http://dwango.co.jp/" target="_blank"><img src="{% static 'img/logo_dwango.png' %}" alt="dwango"></a></p>
+            <p class="mt50"><a href="https://gu3.co.jp/" target="_blank"><img src="{% static 'img/logo_gumi.png' %}" alt="gumi"></a></p>
+            <p><a href="https://xflag.com/" target="_blank"><img src="{% static 'img/logo_mixi.png' %}" alt="mixi"></a></p>
+          </div>
+          <h3 class="sponsors_text">SILVER SPONSORS</h3>
+          <div class="sponsors_silver clearfix mb100">
+            <p><a href="https://forkwell.com/" target="_blank"><img src="{% static 'img/logo_forkwell.png' %}" alt=""></a></p>
+            <p><a href="https://linecorp.com/ja/" target="_blank"><img src="{% static 'img/logo_line.png' %}" alt=""></a></p>
+          </div> 
+          <h3 class="sponsors_text">Powered by </h3>
+          <div class="sponsors_powered clearfix">
+            <p><a href="https://conbu.net/" target="_blank"><img src="{% static 'img/logo_conbu.png' %}" alt=""></a></p>
+            <p><a href="http://www.bbtower.co.jp/" target="_blank"><img src="{% static 'img/logo_bbtower.png' %}" alt=""></a></p>
+            <p><a href="https://www.sakura.ad.jp/" target="_blank"><img src="{% static 'img/logo_sakura.jpg' %}" alt=""></a></p>
+          </div>
+          <p class="center mt70 text_l">スポンサーについてご興味を持たれた企業様はメール(<a href="mailto:elixirfestjp@gmail.com">elixirfestjp@gmail.com</a>)にてお問い合わせお願いします。</p>
+        </div>
+        {% endif %}
+        {% if status_accepting or status_end_accepting %}
+        <h2 class="contents_h2">Erlang &amp; Elixir Fest 2019 スピーカーの募集</h2>
+        <p class="read_text">
+          Erlang &amp; Elixir Fest は今年で3回目を迎え、
+          <br>6月1日(土) に、永田町 JA共済ビルで、開催いたします。
+        </p>
+        <p class="mt20 read_text">前回は、既に様々な場面で使われていた Erlang だけでなく、
+          <br>Elixir もプロダクションでの稼働が多く増えた印象がありました。
+          <br>今回もまた、さらに様々な箇所で活躍するようになった話や、
+          <br>改良され続ける Erlang &amp; Elixir の興味深い話があるだろうかと思います。
+        </p>
+        <p class="mt20 read_text">つきまして、セッション講演者の公募を開始いたします。</p>
+        <ul class="mt40 top_list list_disc">
+          <li>発表内容は、Erlang, Elixir のいずれかに関係すること</li>
+          <li>発表時間は、質疑応答を含めて、25分以内であること</li>
+          <li>発表内容は、日本語か英語であること</li>
+          <li>応募締め切りは、2019年3月15日 00:00 JST です</li>
+          <li>講演者の選考方法は、実行委員がバランスを考慮し、選考させていただきます</li>
+          <li>講演者として採択された方は、イベントの参加チケットは提供させていただきます</li>
+          <li>採択結果は、4月初め頃までにご連絡させていただく予定です</li>
+        </ul>
+        <p class="twitter_text"><a href="https://twitter.com/elixirfest" target="_blank"><span><i class="icon-twitter"></i></span>最新情報はTwitterをフォロー<br class="sp">してください</a></p>
+      </div>
+      {% if status_end_accepting %}
+      <a class="btn_apply" href="javascript:void(0)"><i class="icon-play3"></i>スピーカー応募は終了いたしました<br><span>Call for Speakers</span></a>
+      {% else %}
+      <a class="btn_apply" href="{% url 'entry' %}"><i class="icon-play3"></i>スピーカーに応募する<br><span>Call for Speakers</span></a>
+      {% endif %}
+      {% endif %}
     </div>
-    {% if status_end_accepting %}
-    <a class="btn_apply" href="javascript:void(0)"><i class="icon-play3"></i>スピーカー応募は終了いたしました<br><span>Call for Speakers</span></a>
-    {% else %}
-    <a class="btn_apply" href="{% url 'entry' %}"><i class="icon-play3"></i>スピーカーに応募する<br><span>Call for Speakers</span></a>
-    {% endif %}
-    {% endif %}
-  </div>
+  </section>
 </section>
 {% endblock contents %} 
