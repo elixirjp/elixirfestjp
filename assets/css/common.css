@@ -259,6 +259,19 @@ header a {
   padding: 0 0 30px;
   margin: 20px 0 30px;
 }
+.contents_h3 {
+  font-size: 2.2rem;
+  color: #cb372c;
+  border-bottom: 1px solid #ededed;
+  padding: 0 0 20px;
+  margin: 50px 0;
+}
+.contents_h4 {
+  font-size: 1.6rem;
+  color: #cb372c;
+  padding: 0;
+  margin: 20px 0;
+}
 .read_text {
   text-align: center;
   margin: 0 80px;
@@ -311,6 +324,10 @@ header a {
   font-size: 1.4rem;
   vertical-align: baseline;
   margin: 0 5px 0 0;
+}
+.sponsor_wanted {
+  width: 600px;
+  margin: 0 auto;
 }
 /*---- footer ----*/
 footer {
@@ -448,6 +465,14 @@ footer p {
   margin: 0 0 10px 20px;
   list-style: disc;
   line-height: 1.6em;
+}
+.list_disc li ul li{
+  margin: 0 0 10px 20px;
+  list-style: none;
+  line-height: 1.6em;
+}
+.list_disc_parent {
+  list-style: none !important;
 }
 .form_h {
   font-weight: bold;
