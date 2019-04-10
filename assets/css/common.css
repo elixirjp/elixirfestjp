@@ -333,6 +333,13 @@ header a {
   vertical-align: baseline;
   margin: 0 5px 0 0;
 }
+.btn_noc {
+  background: #006400;
+}
+.btn_noc:hover {
+  background: #3cb371;
+  opacity: 1;
+}
 .sponsor_wanted {
   width: 600px;
   margin: 0 auto;

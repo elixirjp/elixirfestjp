@@ -190,11 +190,16 @@
         </div>
         <p class="twitter_text"><a href="https://twitter.com/elixirfest" target="_blank"><span><i class="icon-twitter"></i></span>最新情報はTwitterをフォロー<br class="sp">してください</a></p>
       </div>
+      <p>
+        <a class="btn_apply btn_noc" href="{% url 'noc' %}"><i class="icon-play3"></i>NOC(Network Operation Center)メンバ募集<br><span>Call for NOC Members</span></a>
+      </p>
+      <p class="mt30">
       {% if status_end_accepting %}
       <a class="btn_apply" href="javascript:void(0)"><i class="icon-play3"></i>スピーカー応募は終了いたしました<br><span>Call for Speakers</span></a>
       {% else %}
       <a class="btn_apply" href="{% url 'entry' %}"><i class="icon-play3"></i>スピーカーに応募する<br><span>Call for Speakers</span></a>
       {% endif %}
+      </p>
       {% endif %}
     </div>
   </section>
