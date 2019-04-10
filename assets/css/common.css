@@ -277,6 +277,14 @@ header a {
   margin: 0 80px;
   font-size: 1.6rem;
 }
+.read_box dl dt {
+  font-weight: bold;
+}
+.read_box ul li {
+  line-height: 2.5;
+  list-style: disc;
+  margin-left: 20px;
+}
 .twitter_text {
   font-size: 1.6rem;
   text-align: center;

@@ -26,6 +26,7 @@ from core import views
 
 urlpatterns = [
     url(r'^$', views.IndexView.as_view(), name='index'),
+    url(r'^noc/$', TemplateView.as_view(template_name='noc.html'), name='noc'),
     url(r'^admin/', admin.site.urls),
 ]
 

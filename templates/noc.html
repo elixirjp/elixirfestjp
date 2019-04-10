@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block contents %}
+<div class="mv_box">
+    <p><img class="logo_erlang" src="{% static 'img/logo_Erlang.png' %}" alt="Erlang"><img class="logo_elixir" src="{% static 'img/logo_elixir.png' %}" alt="elixir"></p>
+    <h1 class="mv_title01">Erlang &amp; Elixir</h1>
+    <h1 class="mv_title02">Fest 2019</h1>
+    <p class="day_text"><span class="day_blue_text">開催日</span><span class="day_number_text">2019</span>年 <span class="day_number_text">6</span>月<span class="day_number_text">1</span>日(土)</p>
+    <p class="place-text">永田町 JA共済ビル<a class="map_link" href="https://goo.gl/maps/m5ddhWNNbXD2" target="_blank">MAP</a></p>
+    <p class="hash_text">#elixirfest</p>
+</div>
+<section class="main_contents">
+  <section class="main_box">
+    <div class="main_box_inner clearfix">
+      <div class="contents_box">
+        <h2 class="contents_h2">NOC(Network Operation Center)メンバ募集のお知らせ</h2>
+        <p class="text_l">
+          Erlang and Elixir Fest. 2019では来場者の方々にお使いいただけるWi-Fiを提供するため会場ネットワーク構築を行います。
+          <br>つきましては、構築に際してNOC(Network Operation Center)を設置し、一緒に会場ネットワーク構築を行っていただけるプロジェクトメンバーの募集をいたします
+        </p>
+        <p class="mt20">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDsyA8b8_8sZwgy_6-LLOPYH3P-2-JgZFva_Y70ZIBXWqz1w/viewform" target="_blank" class="btn_apply" >応募フォーム</a>
+        </p>
+        <h3 class="contents_h3">募集要項</h3>
+        <div class="read_box">
+          <dl>
+            <dt>募集人数</dt>
+            <dd>5名程度 (応募多数の場合選考を実施いたします)</dd>
+          </dl>
+          <dl>
+            <dt>募集期間</dt>
+            <dd>2019年4月10日　〜　2019年4月19日 23:59 JST</dd>
+          </dl>
+        </div>
+        <h3 class="contents_h3">スケジュール</h3>
+        <ul>
+          <li>5月上旬 - キックオフ・設計開始</li>
+          <li>5月中旬 - Hot Stage(構築検証、4日程度)</li>
+          <li>6/1 - Elixir &amp; Erlang Fest. 2019 イベント当日</li>
+          <li>6月中 - プロジェクト振り返り</li>
+        </ul>
+
+        <h3 class="contents_h3">プロジェクトの進め方</h3>
+        <p>
+          スケジュールの通りイベントの開催日まで、数回の打ち合わせやオンラインでのコミュニケーション、実作業等を予定しています。
+          <br>また、イベントの当日はネットワークの設営・運用などを実施します。
+          <br>全日程への参加は必須ではありませんが、 積極的に参加していただける方が望ましいです。
+          <br>本プロジェクトではGoogle Document,Slackなどのツールを利用します。
+        </p>
+
+        <h3 class="contents_h3">作業内容の例</h3>
+        <div class="read_box">
+          <ul>
+            <li>会場下見・ネットワーク回線の手配・ネットワーク設計・当日作業手順書作成</li>
+            <li>監視(設計・設定・セキュリティ含む)</li>
+            <li>無線AP、無線コントローラ・L3/L2スイッチ設定・ケーブルアサイン・タグ作り</li>
+            <li>会場ルール(入館時間・電源関係・養生関係・安全)折衝</li>
+            <li>得てして、設計やなぜそうしたのか？を文書に残さない駄目なエンジニアから情報を引き出しお絵かき・文書作成(大歓迎)</li>
+            <li>会場ネットワークを活用した事例研究や楽しそうなことを考え実行</li>
+          </ul>
+        </div>
+        <p class="mt10">構築経験は問いませんが、応募メンバーのバランスを考慮し選考させていただく場合があります。</p>
+
+        <p class="mt20">
+          この会場ネットワーク構築プロジェクトには「CONBU」のご協力を得ています。
+          <br>CONBUについて CONBUについては、<a href="http://conbu.net/about/" target="_blank">こちらのページ</a>をご覧ください。
+        </p>
+
+        <p class="mt20">
+          応募の締め切りについて プロジェクトメンバーの応募期限は <b>2019年4月19日(金) 23:59 JST</b> です。
+          <br>ご不明な点がございましたら、conbu-core'at'conbu.net までお問い合わせください。
+        </p>
+
+        <p class="mt20">ご応募お待ちしております！</p>
+        <p class="mt20">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDsyA8b8_8sZwgy_6-LLOPYH3P-2-JgZFva_Y70ZIBXWqz1w/viewform" target="_blank" class="btn_apply" >応募フォーム</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</section>
+{% endblock contents %} 
