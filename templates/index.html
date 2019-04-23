@@ -45,7 +45,9 @@
           {% endfor %}
         </div>
       </div>
+      {% if connpass_url %}
       <p><a class="btn_apply" href="{{ connpass_url }}" target="_blank"><i class="icon-play3"></i>Erlang &amp; Elixir Fest 2019 に応募する</a></p>
+      {% endif %}
       {% if news_list %}
       <div class="contents_box effect  mt70">
         <h2 class="contents_h2">お知らせ<br>
@@ -115,7 +117,9 @@
           <p class="mt20 text_red">セッションと並行してハンズオンも開催されます。</p>
         </div>
       </div>
+      {% if connpass_url %}
       <p><a class="btn_apply" href="{{ connpass_url }}" target="_blank"><i class="icon-play3"></i>Erlang &amp; Elixir Fest 2019 に応募する</a></p>
+      {% endif %}
       <div class="contents_box effect mt70">
         <h2 class="contents_h2 mb0">地図<br>
           <span class="contents_h2_s">Map</span></h2>

@@ -154,7 +154,7 @@ ACCEPTING_EMAIL_TO_ADMIN_SUBJECT = '[Erlang & Elixir Fest 2019] スピーカー�
 ADMIN_EMAIL_FROM = 'no-reply@elixirconf.jp'
 ADMIN_EMAILS_TO = []
 
-CONNPASS_URL = 'https://elixirconf.connpass.com/event/85496/'
+CONNPASS_URL = ''
 
 # 情報公開準備中
 PUBLICATION_STATUS_PREPARING = 0
@@ -165,6 +165,6 @@ PUBLICATION_STATUS_END_ACCEPTING = 2
 # 公開
 PUBLICATION_STATUS_PUBLIC = 3
 # サイトの表示ステータス
-PUBLICATION_STATUS = PUBLICATION_STATUS_END_ACCEPTING
+PUBLICATION_STATUS = PUBLICATION_STATUS_PUBLIC
 
 SOCIAL_AUTH_LOGIN_ERROR_URL = '/entry/'

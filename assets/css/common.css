@@ -259,6 +259,10 @@ header a {
   padding: 0 0 30px;
   margin: 20px 0 30px;
 }
+.contents_h2_s {
+  font-size: 1.4rem;
+  color: #cb372c;
+}
 .contents_h3 {
   font-size: 2.2rem;
   color: #cb372c;
@@ -540,6 +544,150 @@ footer p {
   background: #ef837b;
 }
 
+.speaker_box {
+  display: inline-block;
+  text-align: center;
+  margin: 0 40px;
+}
+.speaker_photo {
+  height: 210px;
+  width: 210px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+.speaker_photo img {
+  height: auto;
+  width: 100%;
+}
+.speaker_name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 20px 0 0 0;
+}
+.speaker_lang {
+  font-weight: normal;
+  font-size: 1.4rem;
+  margin: 0 0 0 10px;
+}
+.speaker_name i, .session_name i, .lightningtalk_box i {
+  margin: 0 0 0 5px;
+  font-size: 120%;
+}
+.speaker_name a, .session_name a, .lightningtalk_box a {
+  color: #2e7e94;
+}
+.speaker_read {
+  text-align: left;
+  margin: 10px 30px 0;
+}
+.info_box dl {
+  margin: 0 0 30px;
+  padding: 0 30px 30px;
+  border-bottom: dotted 1px #e6e6e6;
+}
+.info_box dl dt {
+  color: #7a8026;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0 0 20px;
+  padding: 0 10px;
+  border-left: solid 3px #7a8026;
+}
+.session_box {
+  margin: 40px 0 80px;
+}
+.session_photo {
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 10px 0 10px 0;
+  float: left;
+}
+.session_photo img {
+  height: auto;
+  width: 100%;
+}
+.session_txt {
+  float: right;
+  width: 720px;
+}
+.session_txt h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #7a8026;
+}
+.session_name {
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  border-bottom: dotted 1px #e6e6e6;
+  font-weight: bold;
+}
+.lightningtalk_box ul li {
+  margin: 0 0 30px;
+  width: 48%;
+  border-left: solid 3px #7a8026;
+  padding: 0 0 0 15px;
+  box-sizing: border-box;
+}
+.lightningtalk_box ul li:nth-child(odd) {
+  float: left;
+}
+.lightningtalk_box ul li:nth-child(even) {
+  float: right;
+}
+.schedule_box {
+}
+.time-table li {
+  padding: 10px 20px;
+}
+.time-table li:nth-child(even) {
+  background: #efefef;
+}
+.time-table span {
+  font-weight: bold;
+  margin: 0 40px 0 0;
+}
+.sponsors_box {
+  text-align: center;
+}
+.sponsors_text {
+  color: #7a8026;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin: 0 0 20px;
+}
+.sponsors_gold img, .sponsors_silver img, .sponsors_powered img {
+  width: 100%;
+  height: auto;
+}
+.sponsors_gold p, .sponsors_silver p {
+  text-align: center;
+}
+.sponsors_gold p {
+  width: 50%;
+  margin: 0 auto 30px;
+}
+.sponsors_silver {
+  margin: 0 120px;
+}
+.sponsors_silver p {
+  width: 48%;
+  margin: 0 0 30px;
+}
+.sponsors_silver p:nth-child(odd) {
+  float: left;
+}
+.sponsors_silver p:nth-child(even) {
+  float: right;
+}
+.sponsors_powered p {
+  width: 16%;
+  display: inline-block;
+  margin: 0 2% 20px;
+}
+
 /*===============================================
  PC版のみ
 ===============================================*/
@@ -778,5 +926,73 @@ footer {
 }
 .sponsor_wanted {
   width: 100%;
+}
+.speaker_box {
+  margin: 0 auto;
+}
+.speaker_read {
+  margin: 10px 0px 0;
+}
+.info_box dl {
+  padding: 0 0px 30px;
+}
+.session_photo {
+  margin: 10px auto 10px;
+  float: none;
+}
+.session_txt {
+  float: none;
+  width: 100%;
+}
+.lightningtalk_box ul li {
+  width: 100%;
+}
+.lightningtalk_box ul li:nth-child(odd) {
+  float: none;
+}
+.lightningtalk_box ul li:nth-child(even) {
+  float: none;
+}
+.time-table li {
+  padding: 15px 10px;
+  line-height: 1.2em;
+}
+.time-table span {
+  font-weight: bold;
+  display: block;
+  margin: 0 0 5px;
+}
+.sponsors_gold p {
+  width: 100%;
+  margin: 0 auto 30px;
+}
+.sponsors_silver {
+  margin: 0px;
+}
+.sponsors_silver p {
+  width: 70%;
+  margin: 0 auto 15px;
+}
+.sponsors_silver p:nth-child(odd) {
+  float: none;
+}
+.sponsors_silver p:nth-child(even) {
+  float: none;
+}
+.sponsors_powered p {
+  width: 48%;
+  display: block;
+  margin: 0 0 15px;
+}
+.sponsors_powered p:nth-child(odd) {
+  float: left;
+}
+.sponsors_powered p:nth-child(even) {
+  float: right;
+}
+.read_box dl {
+  display: block;
+  margin: 0 0 20px;
+}
 }
 }
