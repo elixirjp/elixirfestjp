@@ -16,7 +16,7 @@
       <div class="contents_box effect">
         {% if status_public %}
         <div class="read_box">
-          <dl>
+          <dl class="mb40">
             <dt>日程</dt>
             <dd>2019年6月1日(土)</dd>
             <dd>開場: 10:00 開演: 10:30</dd>
@@ -64,7 +64,12 @@
           <span class="contents_h2_s">Sessions</span></h2>
         {% for session in sessions %}
         <div class="session_box clearfix">
-          <div class="session_photo"><img src="{{ session.speaker_icon.url }}" alt=""></div>
+          <div class="session_photo">
+            <div><img src="{{ session.speaker_icon.url }}" alt=""></div>
+            {% if session.speaker_icon2 %}
+            <div><img src="{{ session.speaker_icon2.url }}" alt=""></div>
+            {% endif %}
+          </div>
           <div class="session_txt">
             <h3>{{ session.title }}</h3>
             <p class="session_name">{{ session.speaker }}</p>

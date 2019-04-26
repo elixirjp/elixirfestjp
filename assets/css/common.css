@@ -201,8 +201,12 @@ header a {
 
 .main_contents {
   width: 100%;
-  background: url(../img/bg_pattern.png);
+  background: url(../img/bg_maintop.png) center top #e1e2d9 no-repeat;
 }
+.main_box {
+  padding: 40px 0;
+}
+/*
 .main_box {
   position: relative;
   overflow: hidden;
@@ -226,6 +230,7 @@ header a {
   transform: rotate(-4deg);
   z-index: -1;
 }
+*/
 .main_box_inner {
   width: 1024px;
   position: relative;
@@ -281,8 +286,36 @@ header a {
   margin: 0 80px;
   font-size: 1.6rem;
 }
+
 .read_box dl dt {
-  font-weight: bold;
+  position: relative;
+  padding-left: 50px;
+  color: #cb372c;
+  font-size: 2.0rem;
+  margin-bottom: 10px;
+}
+.read_box dl dt:before {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+  background: #ffe8e6;
+  color: #cb372c;
+  font-size: 25px;
+  border-radius: 50%;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.read_box dl dd {
+  padding: 0 0 0 50px;
+  font-size: 1.6rem;
+  line-height: 2.0em;
 }
 .read_box ul li {
   line-height: 2.5;
@@ -598,14 +631,16 @@ footer p {
   margin: 40px 0 80px;
 }
 .session_photo {
+  float: left;
+}
+.session_photo div {
   height: 150px;
   width: 150px;
   overflow: hidden;
   border-radius: 50%;
   margin: 10px 0 10px 0;
-  float: left;
 }
-.session_photo img {
+.session_photo div img {
   height: auto;
   width: 100%;
 }
@@ -693,6 +728,9 @@ footer p {
 ===============================================*/
 @media screen and (min-width: 1920px) {
   body {
+    background-size: 100% auto;
+  }
+  .main_contents {
     background-size: 100% auto;
   }
 }
@@ -811,6 +849,23 @@ header {
 }
 .login_contents .main_box {
   padding-top: 60px;
+}
+.read_box dl.mb40 {
+  margin-bottom: 20px !important;
+}
+.read_box dl dt {
+  font-size: 1.6rem;
+  padding-left: 40px;
+}
+.read_box dl dt::before {
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+.read_box dl dd {
+  font-size: 1.4rem;
+  padding-left: 40px;
 }
 .page_box {
   width: 100%;
@@ -937,8 +992,11 @@ footer {
   padding: 0 0px 30px;
 }
 .session_photo {
-  margin: 10px auto 10px;
   float: none;
+  text-align: center;
+}
+.session_photo div {
+  margin: 10px auto 10px;
 }
 .session_txt {
   float: none;
