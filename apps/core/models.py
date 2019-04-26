@@ -33,6 +33,7 @@ class Session(models.Model):
     content = models.TextField()
     speaker = models.CharField(max_length=100)
     speaker_icon = models.ImageField(upload_to='speaker')
+    speaker_icon2 = models.ImageField(upload_to='speaker', blank=True)
     twitter_link = models.URLField(blank=True)
     order = models.IntegerField(default=0)
     is_keynote = models.BooleanField(default=False)
