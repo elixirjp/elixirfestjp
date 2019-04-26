@@ -37,7 +37,7 @@
           <div class="speaker_box">
             <div class="speaker_photo"><img src="{{ session.speaker_icon.url }}" alt=""></div>
             <p class="speaker_name">{{ session.speaker }}{% if session.twitter_link %}<a href="{{ session.twitter_link }}" target="_blank"><i class="icon-twitter"></i></a>{% endif %}</p>
-            <p class="speaker_read">{{ session.content }}</p>
+            <p class="speaker_read">{{ session.content|linebreaksbr }}</p>
           </div>
           {% endfor %}
         </div>
