@@ -30,8 +30,8 @@
       </div>
       <div class="contents_box effect">
         <h2 class="contents_h2">講演者<br>
-          <span class="contents_h2_s">KEYNOTE SPEAKERS</span></h2>
-        <div class="center mb40"> 
+          <span class="contents_h2_s">KEYNOTE SPEAKER</span></h2>
+        <div class="center mb40">
           <!--speaker_box-->
           {% for session in keynote_sessions %}
           <div class="speaker_box">
@@ -61,7 +61,7 @@
       {% endif %}
       <div class="contents_box effect mt70">
         <h2 class="contents_h2">セッション一覧<br>
-          <span class="contents_h2_s">Session</span></h2>
+          <span class="contents_h2_s">Sessions</span></h2>
         {% for session in sessions %}
         <div class="session_box clearfix">
           <div class="session_photo"><img src="{{ session.speaker_icon.url }}" alt=""></div>
