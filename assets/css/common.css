@@ -370,6 +370,14 @@ header a {
   vertical-align: baseline;
   margin: 0 5px 0 0;
 }
+.btn_lt {
+  background: #006400;
+  color: #fff !important;
+}
+.btn_lt:hover {
+  background: #006400;
+  opacity: 0.5;
+}
 .btn_noc {
   background: #006400;
 }
