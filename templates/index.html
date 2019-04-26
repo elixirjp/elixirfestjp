@@ -15,18 +15,15 @@
     <div class="main_box_inner clearfix">
       <div class="contents_box effect">
         {% if status_public %}
-        <p class="text_l">昨年 Elixir Conf Japan として日本初の Elixir カンファレンスを開催してから一年の間で、 Elixir は日本でもプロダクションでの利用事例が数多く見られるようになってきました。今年は Erlang の名前も冠して、Erlang & Elixir Fest. 2019 として、ベースとなるErlangの技術にも注目しつつ、実戦投入されているより具体的な事例を見ながら、日本の Erlang & Elixir ユーザを盛り上げていければと考えています。</p>
         <div class="read_box">
           <dl>
-            <dt>開催日</dt>
+            <dt>日程</dt>
             <dd>2019年6月1日(土)</dd>
+            <dd>開場: 10:00 開演: 10:30</dd>
+            <dd>閉会: 19:30</dd>
           </dl>
           <dl>
-            <dt>会場</dt>
-            <dd>永田町 JA共済ビル</dd>
-          </dl>
-          <dl>
-            <dt>会費(懇親会費込み)</dt>
+            <dt>会費(昼食、懇親会費込み)</dt>
             <dd>一般: 6,000円 学生: 3,000円</dd>
           </dl>
         </div>
@@ -91,32 +88,6 @@
           </ul>
         </div>
       </div>
-      <div class="contents_box effect">
-        <h2 class="contents_h2">スケジュールについて<br>
-          <span class="contents_h2_s">Schedule</span></h2>
-        <div class="schedule_box">
-          <ul class="time-table">
-            <li><span>10:00</span> 開場</li>
-            <li><span>10:30</span> 開会の挨拶</li>
-            <li><span>10:40</span> セッション1</li>
-            <li><span>11:10</span> セッション2</li>
-            <li><span>11:40</span> 休憩</li>
-            <li><span>12:00</span> セッション3</li>
-            <li><span>12:30</span> セッション4</li>
-            <li><span>13:00</span> ランチ休憩</li>
-            <li><span>14:30</span> セッション5</li>
-            <li><span>15:00</span> セッション6</li>
-            <li><span>15:30</span> 休憩</li>
-            <li><span>15:50</span> セッション7</li>
-            <li><span>16:20</span> セッション8</li>
-            <li><span>16:50</span> 休憩</li>
-            <li><span>17:10</span> LT Time</li>
-            <li><span>18:00</span> キーノート</li>
-            <li><span>19:10</span> 閉会</li>
-          </ul>
-          <p class="mt20 text_red">セッションと並行してハンズオンも開催されます。</p>
-        </div>
-      </div>
       {% if connpass_url %}
       <p><a class="btn_apply" href="{{ connpass_url }}" target="_blank"><i class="icon-play3"></i>Erlang &amp; Elixir Fest 2019 に応募する</a></p>
       {% endif %}
@@ -131,22 +102,17 @@
         <div class="sponsors_box">
           <h3 class="sponsors_text">GOLD SPONSORS</h3>
           <div class="sponsors_gold mb100">
-            <p><a href="https://aktsk.jp/" target="_blank"><img src="{% static 'img/logo_akatsuki.png' %}" alt="Akatsuki"></a></p>
+            <p><a href="https://aktsk.jp/" target="_blank"><img src="{% static 'img/logo_akatsuki.png' %}" alt="akatsuki"></a></p>
+            <p><a href="https://www.access-company.com/" target="_blank"><img src="{% static 'img/logo_access.png' %}" alt="access"></a></p>
             <p><a href="http://www.drecom.co.jp/" target="_blank"><img src="{% static 'img/logo_drecom.png' %}" alt="dricom"></a></p>
-            <p><a href="http://dwango.co.jp/" target="_blank"><img src="{% static 'img/logo_dwango.png' %}" alt="dwango"></a></p>
             <p class="mt50"><a href="https://gu3.co.jp/" target="_blank"><img src="{% static 'img/logo_gumi.png' %}" alt="gumi"></a></p>
             <p><a href="https://xflag.com/" target="_blank"><img src="{% static 'img/logo_mixi.png' %}" alt="mixi"></a></p>
           </div>
-          <h3 class="sponsors_text">SILVER SPONSORS</h3>
-          <div class="sponsors_silver clearfix mb100">
-            <p><a href="https://forkwell.com/" target="_blank"><img src="{% static 'img/logo_forkwell.png' %}" alt=""></a></p>
-            <p><a href="https://linecorp.com/ja/" target="_blank"><img src="{% static 'img/logo_line.png' %}" alt=""></a></p>
-          </div> 
           <h3 class="sponsors_text">Powered by </h3>
           <div class="sponsors_powered clearfix">
             <p><a href="https://conbu.net/" target="_blank"><img src="{% static 'img/logo_conbu.png' %}" alt=""></a></p>
             <p><a href="http://www.bbtower.co.jp/" target="_blank"><img src="{% static 'img/logo_bbtower.png' %}" alt=""></a></p>
-            <p><a href="https://www.sakura.ad.jp/" target="_blank"><img src="{% static 'img/logo_sakura.jpg' %}" alt=""></a></p>
+            <p><a href="https://grid.tokyo.jp/" target="_blank"><img src="{% static 'img/logo_grid.png' %}" alt=""></a></p>
           </div>
           <p class="center mt70 text_l">スポンサーについてご興味を持たれた企業様はメール(<a href="mailto:elixirfestjp@gmail.com">elixirfestjp@gmail.com</a>)にてお問い合わせお願いします。</p>
         </div>
