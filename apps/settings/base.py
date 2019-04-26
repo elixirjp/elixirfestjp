@@ -154,7 +154,7 @@ ACCEPTING_EMAIL_TO_ADMIN_SUBJECT = '[Erlang & Elixir Fest 2019] スピーカー�
 ADMIN_EMAIL_FROM = 'no-reply@elixirconf.jp'
 ADMIN_EMAILS_TO = []
 
-CONNPASS_URL = ''
+CONNPASS_URL = 'https://elixirconf.connpass.com/event/129526/'
 
 # 情報公開準備中
 PUBLICATION_STATUS_PREPARING = 0
