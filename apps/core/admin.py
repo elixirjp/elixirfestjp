@@ -21,7 +21,7 @@ class LightningTalkAdmin(admin.ModelAdmin):
 
 
 class SessionAdmin(admin.ModelAdmin):
-    list_display = ('title', 'speaker', 'created_at', 'is_keynote', 'is_active', 'order')
+    list_display = ('title', 'speaker', 'created_at', 'is_keynote', 'is_short_session', 'is_active', 'order')
 
 
 admin.site.register(Entry, EntryAdmin)
