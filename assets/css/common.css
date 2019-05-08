@@ -622,12 +622,12 @@ footer p {
   text-align: left;
   margin: 10px 30px 0;
 }
-.info_box dl {
+.news_box dl {
   margin: 0 0 30px;
   padding: 0 30px 30px;
   border-bottom: dotted 1px #e6e6e6;
 }
-.info_box dl dt {
+.news_box dl dt {
   color: #7a8026;
   font-size: 1.6rem;
   font-weight: bold;
@@ -660,6 +660,15 @@ footer p {
   font-size: 1.8rem;
   font-weight: bold;
   color: #7a8026;
+}
+.session_txt h3 .short {
+  font-size: 1.2rem;
+  font-weight: normal;
+  background: #bfc388;
+  color: #ffffff;
+  padding: 3px 6px;
+  border-radius: 2px;
+  margin: 0 0 0 10px;
 }
 .session_name {
   margin: 0 0 10px;
@@ -729,6 +738,13 @@ footer p {
   width: 16%;
   display: inline-block;
   margin: 0 2% 20px;
+}
+.info_box {
+  border: 1px solid #cb372c;
+  color: #cb372c;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.8rem;
 }
 
 /*===============================================
@@ -996,7 +1012,7 @@ footer {
 .speaker_read {
   margin: 10px 0px 0;
 }
-.info_box dl {
+.news_box dl {
   padding: 0 0px 30px;
 }
 .session_photo {
@@ -1059,6 +1075,10 @@ footer {
 .read_box dl {
   display: block;
   margin: 0 0 20px;
+}
+.info_box {
+  font-size: 1.4rem;
+  padding: 15px;
 }
 }
 }

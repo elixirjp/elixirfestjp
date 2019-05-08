@@ -49,7 +49,7 @@
       <div class="contents_box effect  mt70">
         <h2 class="contents_h2">お知らせ<br>
           <span class="contents_h2_s">Information</span></h2>
-        <div class="info_box">
+        <div class="news_box">
           {% for news in news_list %}
           <dl>
             <dt>{{ news.title }}</dt>
@@ -71,12 +71,15 @@
             {% endif %}
           </div>
           <div class="session_txt">
-            <h3>{{ session.title }}</h3>
+            <h3>{{ session.title }}{% if session.short_session %}<span class="short">short session</span>{% endif %}</h3>
             <p class="session_name">{{ session.speaker }}</p>
             <p>{{ session.content|linebreaksbr }}</p>
           </div>
         </div>
         {% endfor %}
+        <div class="info_box">
+          <p>ハンズオン : 昼食休憩中メインホールにて</p>
+        </div>
       </div>
       {% if connpass_url %}
       <p class="mb40"><a class="btn_apply" href="{{ connpass_url }}" target="_blank"><i class="icon-play3"></i>Erlang &amp; Elixir Fest 2019 に応募する</a></p>
