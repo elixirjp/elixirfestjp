@@ -725,14 +725,8 @@ footer p {
   margin: 0 120px;
 }
 .sponsors_silver p {
-  width: 48%;
-  margin: 0 0 30px;
-}
-.sponsors_silver p:nth-child(odd) {
-  float: left;
-}
-.sponsors_silver p:nth-child(even) {
-  float: right;
+  width: 50%;
+  margin: 0 auto 30px;
 }
 .sponsors_powered p {
   width: 16%;
