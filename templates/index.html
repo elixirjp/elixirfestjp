@@ -71,7 +71,7 @@
             {% endif %}
           </div>
           <div class="session_txt">
-            <h3>{{ session.title }}{% if session.short_session %}<span class="short">short session</span>{% endif %}</h3>
+            <h3>{{ session.title }}{% if session.is_short_session %}<span class="short">short session</span>{% endif %}</h3>
             <p class="session_name">{{ session.speaker }}</p>
             <p>{{ session.content|linebreaksbr }}</p>
           </div>
