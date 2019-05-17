@@ -95,11 +95,7 @@
               <img src="{{ session.speaker_icon.url }}" width="50" alt="">
               {% endif %}
               {{ session.title }}<br>
-              {% if session.twitter_link %}
-              <a href="{{ session.twitter_link }}" target="_blank"><i class="icon-twitter"></i>{{ session.speaker }}</a><a href="{{ session.twitter_link }}" target="_blank"></a>
-              {% else %}
-              {{ session.speaker }}
-              {% endif %}
+              {{ session.speaker }}{% if session.twitter_link %}<a href="{{ session.twitter_link }}" target="_blank"><i class="icon-twitter"></i></a>{% endif %}
             </li>
             {% endfor %}
           </ul>
