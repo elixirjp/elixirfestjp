@@ -682,6 +682,16 @@ footer p {
   border-left: solid 3px #7a8026;
   padding: 0 0 0 15px;
   box-sizing: border-box;
+  position: relative;
+}
+.lightningtalk_box ul li.with-icon {
+  padding-left: 75px;
+}
+.lightningtalk_box ul li img {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  height: 50px;
 }
 .lightningtalk_box ul li:nth-child(odd) {
   float: left;

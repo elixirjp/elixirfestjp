@@ -90,7 +90,11 @@
         <div class="lightningtalk_box">
           <ul class="clearfix">
             {% for session in lt_sessions %}
-            <li>{{ session.title }}<br>
+            <li{% if session.speaker_icon %} class="with-icon"{% endif %}>
+              {% if session.speaker_icon %}
+              <img src="{{ session.speaker_icon.url }}" alt="">
+              {% endif %}
+              {{ session.title }}<br>
               {% if session.twitter_link %}
               <a href="{{ session.twitter_link }}" target="_blank"><i class="icon-twitter"></i>{{ session.speaker }}</a><a href="{{ session.twitter_link }}" target="_blank"></a>
               {% else %}
