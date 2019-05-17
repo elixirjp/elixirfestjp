@@ -72,7 +72,7 @@
           </div>
           <div class="session_txt">
             <h3>{{ session.title }}{% if session.is_short_session %}<span class="short">short session</span>{% endif %}</h3>
-            <p class="session_name">{{ session.speaker }}</p>
+            <p class="session_name">{{ session.speaker }}{% if session.twitter_link %}<a href="{{ session.twitter_link }}" target="_blank"><i class="icon-twitter"></i></a>{% endif %}</p>
             <p>{{ session.content|linebreaksbr }}</p>
           </div>
         </div>
