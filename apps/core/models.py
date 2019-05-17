@@ -51,7 +51,7 @@ class Session(models.Model):
 class LightningTalk(models.Model):
     title = models.CharField(max_length=255)
     speaker = models.CharField(max_length=100)
-    speaker_icon = models.ImageField(upload_to='lt')
+    speaker_icon = models.ImageField(upload_to='lt', blank=True)
     twitter_link = models.URLField(blank=True)
     order = models.IntegerField(default=0)
     is_active = models.BooleanField(default=True)
