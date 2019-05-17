@@ -92,7 +92,7 @@
             {% for session in lt_sessions %}
             <li{% if session.speaker_icon %} class="with-icon"{% endif %}>
               {% if session.speaker_icon %}
-              <img src="{{ session.speaker_icon.url }}" alt="">
+              <img src="{{ session.speaker_icon.url }}" width="50" alt="">
               {% endif %}
               {{ session.title }}<br>
               {% if session.twitter_link %}
